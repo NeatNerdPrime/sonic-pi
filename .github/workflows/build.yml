@@ -97,7 +97,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         id: ruby-inst
         with:
-          ruby-version: 3.3
+          ruby-version: 3.4.1
         if: matrix.os == 'windows-latest'
 
       # Install gems Windows
@@ -128,7 +128,7 @@ jobs:
         uses: jurplel/install-qt-action@v4
         with:
           modules: "qtpositioning qtwebchannel qtwebengine qtwebsockets"
-          version: "6.8.1"
+          version: "6.8.2"
 
         # Install Elixir on Ubuntu
       - name: Linux Elixir
