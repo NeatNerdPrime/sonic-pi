@@ -1,5 +1,6 @@
+cmake_minimum_required (VERSION 3.13)
 project (sp_midi)
-cmake_minimum_required (VERSION 3.0)
+
 
 option(USE_SYSTEM_RTMIDI "Use system RtMidi library instead of built-in library (Linux only)" OFF)
 
