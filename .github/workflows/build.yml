@@ -321,7 +321,7 @@ jobs:
 
       - name: API Tests - Windows
         shell: cmd
-        working-directory: ${{github.workspace}}/app/build/api-tests
+        working-directory: ${{ github.workspace }}\app\build\api-tests
         env:
           SONIC_PI_ENV: test
         run: ctest --verbose
