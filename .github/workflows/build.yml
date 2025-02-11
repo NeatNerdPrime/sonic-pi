@@ -108,7 +108,7 @@ jobs:
           gem install test-unit
         if: matrix.os == 'windows-latest'
 
-      # Install gems Linux/Max - needs sudo
+      # Install gems Linux - needs sudo
       - name: Setup Ruby Gems
         working-directory: ${{github.workspace}}/app
         run: |
@@ -304,21 +304,22 @@ jobs:
           ctest --verbose
         if: matrix.os == 'ubuntu-latest'
 
-      - name: API Tests Windows - Install Scream Audio Device
-        shell: powershell
+      - name: Debug API Tests Directory (Windows)
+        shell: cmd
         run: |
-          Start-Service audio*
-          Invoke-WebRequest https://github.com/duncanthrax/scream/releases/download/3.6/Scream3.6.zip -OutFile C:\Scream3.6.zip
-          Expand-7ZipArchive -Path C:\Scream3.6.zip -DestinationPath C:\Scream
-          $cert = (Get-AuthenticodeSignature C:\Scream\Install\driver\Scream.sys).SignerCertificate
-          $store = [System.Security.Cryptography.X509Certificates.X509Store]::new("TrustedPublisher", "LocalMachine")
-          $store.Open("ReadWrite")
-          $store.Add($cert)
-          $store.Close()
-          cd C:\Scream\Install\driver
-          C:\Scream\Install\helpers\devcon install Scream.inf *Scream
+          echo Current directory is %CD%
+          echo GITHUB_WORKSPACE is %GITHUB_WORKSPACE%
+          echo Listing contents of %GITHUB_WORKSPACE%\app\build:
+          dir "%GITHUB_WORKSPACE%\app\build"
+          if not exist "%GITHUB_WORKSPACE%\app\build\api-tests" (
+            echo "Directory %GITHUB_WORKSPACE%\app\build\api-tests does not exist. Creating it now."
+            mkdir "%GITHUB_WORKSPACE%\app\build\api-tests"
+          ) else (
+            echo "Directory %GITHUB_WORKSPACE%\app\build\api-tests exists."
+          )
         if: matrix.os == 'windows-latest'
 
+      # --- Windows API tests step ---
       - name: API Tests - Windows
         shell: cmd
         working-directory: ${{ github.workspace }}\app\build\api-tests
@@ -326,6 +327,7 @@ jobs:
           SONIC_PI_ENV: test
         run: ctest --verbose
         if: matrix.os == 'windows-latest'
+
 
       - name: Archive Logs
         uses: actions/upload-artifact@v4
