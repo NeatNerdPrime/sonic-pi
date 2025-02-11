@@ -61,7 +61,6 @@ module SonicPi
     include SonicPi::Lang::WesternTheory
     include SonicPi::Lang::Sound
 
-    include ActiveSupport
     def initialize
       @mod_sound_studio = MockStudio.new
       @msg_queue = Queue.new

@@ -11,7 +11,6 @@
 # notice is included.
 #++
 require 'multi_json'
-require 'active_support/core_ext/hash/indifferent_access'
 
 ## A simple json backed settings system. Settings are persisted into a
 ## json file and all access and modification is synchronised with a
@@ -28,11 +27,12 @@ module SonicPi
         rescue
           cur_settings = {}
         end
-        @settings = cur_settings.with_indifferent_access
+        @settings = cur_settings
         @sem = Monitor.new
       end
 
       def get(k, default=nil)
+        k = k.to_sym
         @sem.synchronize do
           if @settings.has_key?(k)
             @settings[k]
@@ -43,6 +43,7 @@ module SonicPi
       end
 
       def get_or_set(k, default=nil)
+        k = k.to_sym
         @sem.synchronize do
           if @settings.has_key?(k)
             @settings[k]
@@ -53,6 +54,7 @@ module SonicPi
       end
 
       def del(k)
+        k = k.to_sym
         @sem.synchronize do
           @settings.delete(k)
           File.open(@settings_path, 'w') do |f|
@@ -62,6 +64,7 @@ module SonicPi
       end
 
       def set(k, v)
+        k = k.to_sym
         @sem.synchronize do
           @settings[k] = v
           File.open(@settings_path, 'w') do |f|
@@ -73,7 +76,7 @@ module SonicPi
 
       def all
         @sem.synchronize do
-          @settings.clone.with_indifferent_access
+          @settings.clone
         end
       end
     end

@@ -41,14 +41,14 @@ puts "Creating #{native_dir}"
 FileUtils.mkdir_p native_dir
 
 # Rugged is used for storing the user's ruby music scripts in Git
-# FFI is used for MIDI lib support
+# concurrent-ruby is used by the i18n gem
 native_ext_dirs = [
   [
-    File.expand_path(File.dirname(__FILE__) + '/../vendor/rugged-1.7.2/ext/rugged'),
+    File.expand_path(File.dirname(__FILE__) + '/../vendor/rugged-1.9.0/ext/rugged'),
     "rugged"
   ],
   [
-    File.expand_path(File.dirname(__FILE__) + '/../vendor/concurrent-ruby-1.2.2/ext/concurrent-ruby-ext'),
+    File.expand_path(File.dirname(__FILE__) + '/../vendor/concurrent-ruby-1.3.5/ext/concurrent-ruby-ext'),
     "concurrent"
   ]
  ]

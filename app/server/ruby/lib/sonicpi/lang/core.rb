@@ -18,8 +18,6 @@ require_relative "../runtime"
 require_relative "../promise"
 require_relative "western_theory"
 
-require 'active_support/inflector'
-
 ## TODO: create _* equivalents of all fns - for silent (i.e computation) versions
 
 module SonicPi
@@ -5117,7 +5115,7 @@ load_buffer \"~/sonic-pi-tracks/phat-beats.rb\" # will replace content of curren
         raise IOError, "Error - no example found with name: #{example_name.inspect}" unless path
         buf = __current_job_info[:workspace]
         __info "loading #{buf} with #{path}"
-        title = ActiveSupport::Inflector.titleize(example_name)
+        title = example_name.titleize
         __replace_buffer(buf, "# #{title}\n" + File.read(path))
       end
       doc name:           :load_example,

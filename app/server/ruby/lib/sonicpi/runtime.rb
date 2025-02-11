@@ -42,8 +42,6 @@ require 'set'
 require 'ruby-beautify'
 require 'securerandom'
 require 'monitor'
-require 'active_support/core_ext/integer/inflections'
-
 
 module SonicPi
   class Stop < StandardError ; end
@@ -1471,7 +1469,6 @@ module SonicPi
   class Runtime
 
     include Util
-    include ActiveSupport
     include RuntimeMethods
 
     def initialize(ports, msg_queue, user_methods)

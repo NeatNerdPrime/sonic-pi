@@ -11,7 +11,6 @@
 # notice is included.
 #++
 require_relative "node"
-require 'active_support/core_ext/hash/indifferent_access'
 
 module SonicPi
   class SynthNode < Node
@@ -21,7 +20,7 @@ module SonicPi
     def initialize(id, group, comms, name, args, info = nil)
       super(id, comms, info)
       @group = group
-      @args = args.with_indifferent_access
+      @args = args
       @name = name
       @control_mutex = Mutex.new
     end

@@ -33,6 +33,7 @@ rescue LoadError
 end
 
 require 'wavefile'
+require 'titleize'
 
 $:.unshift "#{File.expand_path("../rb-native", __FILE__)}/#{ruby_api}/"
 

@@ -24,8 +24,6 @@ require_relative "../lib/sonicpi/lang/core"
 require_relative "../lib/sonicpi/lang/sound"
 require_relative "../lib/sonicpi/lang/midi"
 
-require 'active_support/inflector'
-
 
 include SonicPi::Util
 
@@ -121,7 +119,7 @@ make_tab = lambda do |name, doc_items, titleize=false, should_sort=true, with_ke
   doc_items.each do |n, doc|
     title = n
     if titleize == :titleize then
-      title = ActiveSupport::Inflector.titleize(title)
+      title = title.titleize
       # HPF et al get capitalized
       if name == 'fx' and title =~ /pf$/ then
         title = title.upcase
@@ -235,7 +233,7 @@ example_dirs = ["Apprentice", "Illusionist", "Magician", "Sorcerer", "Wizard", "
 example_dirs.each do |ex_dir|
   Dir["#{SonicPi::Paths.examples_path}/#{ex_dir.downcase}/*.rb"].sort.each do |path|
     bname = File.basename(path, ".rb")
-    bname = ActiveSupport::Inflector.titleize(bname)
+    bname = bname.titleize
     name = "[#{ex_dir}] #{bname}"
     lines = IO.readlines(path).map(&:chop).map{|s| CGI.escapeHTML(s)}
     html = "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n\n"
