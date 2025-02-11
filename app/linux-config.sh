@@ -29,10 +29,6 @@ while [ -n "$1" ]; do
             esac
             shift 2
             ;;
-        -s|--system-libs|-o|--offline-build)
-            system_libs=true
-            shift
-            ;;
         --) shift ; break ;;
         *) echo "Invalid argument: $1" ; exit 1 ;;
     esac
@@ -44,13 +40,5 @@ mkdir -p "${SCRIPT_DIR}/build"
 echo "Generating makefiles..."
 cd "${SCRIPT_DIR}/build"
 
-option() {
-  if [ "$1" == "true" ] || [ "$1" == "!" ] || [ "$1" == "!false" ]; then
-    echo ON
-  else
-    echo OFF
-  fi
-}
-
-cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="$config" -DUSE_SYSTEM_LIBS="$(option "$system_libs")" ..
+cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="$config" -DUSE_SYSTEM_LIBS=ON ..
 

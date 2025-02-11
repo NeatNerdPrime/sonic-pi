@@ -1,5 +1,12 @@
 # This CMakeLists builds all the external libraries required for a Sonic Pi
 cmake_minimum_required(VERSION 3.13)
+set(APP_ROOT ${CMAKE_CURRENT_LIST_DIR})
+
+# vcpkg toolchain - Must be declared before project
+
+if ((WIN32 OR APPLE) AND (NOT USE_SYSTEM_LIBS))
+  set(CMAKE_TOOLCHAIN_FILE ${APP_ROOT}/../vcpkg/scripts/buildsystems/vcpkg.cmake CACHE STRING "Vcpkg toolchain file")
+endif()
 
 message(STATUS "Externals Builder")
 
