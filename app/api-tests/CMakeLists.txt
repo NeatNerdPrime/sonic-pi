@@ -8,10 +8,7 @@ add_subdirectory("${VENDOR_DIR}/Catch2-3.8.0")
 set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
 set(THREADS_PREFER_PTHREAD_FLAG TRUE)
 
-list(APPEND TEST_SOURCES
-    ${TESTS_ROOT}/CMakeLists.txt)
-
-file(GLOB_RECURSE FOUND_TEST_SOURCES "${APP_ROOT}/*.test.cpp")
+file(GLOB_RECURSE FOUND_TEST_SOURCES "${TESTS_ROOT}/*.test.cpp")
 
 enable_testing()
 
