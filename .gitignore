@@ -129,8 +129,11 @@ app/server/rb-native/
 # app/server/vendor/ffi/ext/ and app/server/ruby/vendor/ffi/ext/
 # (the latter is found in the Mac OS X build)
 **/vendor/*/ext/**/Makefile
-**/vendor/ffi-*/ext/ffi_c/extconf.h
-**/vendor/ffi-*/ext/ffi_c/libffi*/
+**/vendor/concurrent-ruby*/**/*bundle.yml
+**/vendor/concurrent-ruby*/**/Contents/Info.plist
+**/vendor/rugged*/**/*bundle.yml
+**/vendor/rugged*/**/Contents/Info.plist
+
 **/vendor/**/build/
 
 ## Book
