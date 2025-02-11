@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 project(sonic-pi-api VERSION 0.0.0.1)
 
-(API_ROOT "${CMAKE_CURRENT_LIST_DIR}")
+set(API_ROOT "${CMAKE_CURRENT_LIST_DIR}")
 set(VENDOR_DIR "${API_ROOT}/vendor")
 
 set(KISSFFT_TEST OFF CACHE BOOL "Disable kissfft tests" FORCE)
