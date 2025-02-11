@@ -28,7 +28,7 @@ require_relative '../lib/sonicpi/lang/sound'
 require_relative '../lib/sonicpi/lang/minecraftpi'
 require_relative '../lib/sonicpi/lang/midi'
 require_relative '../paths'
-require 'active_support/inflector'
+
 require 'erb'
 require 'gettext'
 require 'gettext/tools/xgettext'
