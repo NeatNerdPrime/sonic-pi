@@ -5115,7 +5115,7 @@ load_buffer \"~/sonic-pi-tracks/phat-beats.rb\" # will replace content of curren
         raise IOError, "Error - no example found with name: #{example_name.inspect}" unless path
         buf = __current_job_info[:workspace]
         __info "loading #{buf} with #{path}"
-        title = example_name.titleize
+        title = example_name.to_s.titleize
         __replace_buffer(buf, "# #{title}\n" + File.read(path))
       end
       doc name:           :load_example,
