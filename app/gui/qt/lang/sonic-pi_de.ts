@@ -1548,34 +1548,34 @@ Lade Sonic Pi %1 herunter</translation>
         <location filename="../mainwindow.cpp" line="5240"/>
         <location filename="../mainwindow.cpp" line="5252"/>
         <source>Quick Fix: set the environment variable SONIC_PI_HOME to a directory you have permission to write to.</source>
-        <translation>Schnelle Fehlerbehebung: Die Umgebungsvariable SONIC_PI_HOME auf ein Verzeichnis setzen, in dem sie Schreibberechtigungen haben</translation>
+        <translation>Schnelle Fehlerbehebung: Setze die Umgebungsvariable SONIC_PI_HOME auf ein Verzeichnis , in dem sie Schreibberechtigungen haben</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5244"/>
         <location filename="../mainwindow.cpp" line="5256"/>
         <source>For the curious among you, Sonic Pi automatically stores the contents of the code buffers, configuration files and logs in a folder called .sonic-pi which typically resides in your home directory.</source>
-        <translation type="unfinished"></translation>
+        <translation>Für die Neugierigen unter euch: Sonic Pi speichert die Inhalte der Code-Puffer, Konfigurationsdateien und Logs in dem Ordner .sonic-pi. Diesen findest du normalerweise in deinem Home-Verzeichnis</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5245"/>
         <source>Unfortunately you don&apos;t appear to have permission to write to your home directory:</source>
-        <translation type="unfinished"></translation>
+        <translation>Leider scheint es als hättest du keine Schreibberechtigung in deinem Home-Verzeichnis</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5246"/>
         <location filename="../mainwindow.cpp" line="5258"/>
         <source>To fix this you can set the environment variable SONIC_PI_HOME to any directory you have write access to and Sonic Pi will place its .sonic-pi directory within that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Um dieses Problem zu lösen, setze die Umgebungsvariable SONIC_PI_HOME auf ein Verzeichnis in dem du Schreibberechtigung hast. Sonic Pi speichert dann die .sonic-pi Datei in diesem Verzeichnis</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5250"/>
         <source>Boot Error - SONIC_PI_HOME not writable:</source>
-        <translation type="unfinished"></translation>
+        <translation>Start Fehler - SONIC_PI_HOME ist Schreibgeschützt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5257"/>
         <source>Unfortunately it appears you have set the SONIC_PI_HOME environment variable to a directory you don&apos;t have permission to write to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Leider scheint es als hättest du die Umgebungsvariable SONIC_PI_HOME auf ein Verzeichnis gesetzt für das du keine Schreibberechtigung hast:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3248"/>
