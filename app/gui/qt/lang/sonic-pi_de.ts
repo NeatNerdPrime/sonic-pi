@@ -855,7 +855,7 @@
         <location filename="../mainwindow.cpp" line="1542"/>
         <source>Apologies, unable to start...
 </source>
-        <translation type="unfinished">Entschuldigung, kann nicht starten...
+        <translation>Entschuldigung, Start nicht möglich...
 </translation>
     </message>
     <message>
@@ -928,7 +928,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="2944"/>
         <source>Cut the current selection</source>
-        <translation type="unfinished">Aktive Auswahl ausschneiden</translation>
+        <translation>Aktive Auswahl ausschneiden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2945"/>
@@ -1178,7 +1178,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="3305"/>
         <source>Cut</source>
-        <translation type="unfinished">Ausschneiden</translation>
+        <translation>Ausschneiden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3308"/>
@@ -1243,7 +1243,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="3344"/>
         <source>Undo</source>
-        <translation type="unfinished">Rückgängig machen</translation>
+        <translation>Rückgängig machen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3347"/>
@@ -1373,7 +1373,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="3690"/>
         <source>User Shortcut Mode</source>
-        <translation type="unfinished">Benutzer Tastenkombinations-Modus</translation>
+        <translation>Benutzer Tastenkombinations-Modus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3718"/>
@@ -1690,7 +1690,7 @@ Lade Sonic Pi %1 herunter</translation>
     <message>
         <location filename="../mainwindow.cpp" line="4177"/>
         <source>Save Recording</source>
-        <translation>Speichere Aufnahme</translation>
+        <translation>Aufnahme speichern</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="4373"/>
@@ -1750,12 +1750,12 @@ Lade Sonic Pi %1 herunter</translation>
     <message>
         <location filename="../utils/ruby_help.h" line="3165"/>
         <source>Synths</source>
-        <translation>Synths</translation>
+        <translation>Synthesizer (Tongeneratoren)</translation>
     </message>
     <message>
         <location filename="../utils/ruby_help.h" line="3214"/>
         <source>Fx</source>
-        <translation>FX</translation>
+        <translation>Fx</translation>
     </message>
     <message>
         <location filename="../utils/ruby_help.h" line="3238"/>
@@ -1830,7 +1830,7 @@ externen PA-Systemen bei Auftritten mit Sonic Pi.</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="93"/>
         <source>Invert stereo</source>
-        <translation>Tausche Stereokanäle</translation>
+        <translation>Stereokanäle vertauschen</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="94"/>
@@ -1844,7 +1844,7 @@ und Audio vom rechten Kanal auf dem linken Lautsprecher ausgegeben.</translation
     <message>
         <location filename="../widgets/settingswidget.cpp" line="95"/>
         <source>Force mono</source>
-        <translation>Erzwinge Mono</translation>
+        <translation>Mono erzwingen</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="96"/>
@@ -1976,7 +1976,7 @@ Wenn deaktiviert, können OSC-Signale innerhalb des Computers gesendet und empfa
     <message>
         <location filename="../widgets/settingswidget.cpp" line="293"/>
         <source>Automatically align code on Enter or Run </source>
-        <translation type="unfinished"></translation>
+        <translation>Code automatisch ausrichten bei Run oder Enter-Eingabe </translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="298"/>
@@ -1998,7 +1998,7 @@ Wenn deaktiviert werden keine OSC-Signale empfangen.</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="194"/>
         <source>Configure MIDI behaviour</source>
-        <translation>Konfiguriere MIDI-Verhalten</translation>
+        <translation>MIDI-Verhalten konfigurieren</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="196"/>
@@ -2013,13 +2013,13 @@ Wenn deaktiviert werden keine OSC-Signale empfangen.</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="202"/>
         <source>Reset MIDI</source>
-        <translation>Setze MIDI zurück</translation>
+        <translation>MIDI zurücksetzen</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="204"/>
         <source>Reset MIDI subsystems 
 (Required to detect device changes on macOS)</source>
-        <translation>Setze MIDI-Subsysteme zurück
+        <translation>MIDI-Subsysteme zurücksetzen
 (Erforderlich zur Erkennung von Geräteänderungen unter macOS )</translation>
     </message>
     <message>
@@ -2101,7 +2101,7 @@ midi_*-Funktionen gesendet werden können direkt von Sonic Pi</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="128"/>
         <source>Audio hardware configuration and information.</source>
-        <translation>Audio Hardware Konfiguration und Information.</translation>
+        <translation>Audiohardware Konfiguration und Information.</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="129"/>
@@ -2141,7 +2141,7 @@ midi_*-Funktionen gesendet werden können direkt von Sonic Pi</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="284"/>
         <source>Show and hide information panes such as the scope and log.</source>
-        <translation>Zeigt und verbirgt Informationspaneele, so wie Visualisierung und Protokoll-Anzeige.</translation>
+        <translation>Zeige und verstecke Informationsbereiche wie Oszilloskop und Protokoll.</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="287"/>
@@ -2266,7 +2266,7 @@ midi_*-Funktionen gesendet werden können direkt von Sonic Pi</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="330"/>
         <source>Automatically hide the menubar when the app is in full screen mode. Note that the menubar is always visible when not in full screen mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Verstecke die Menüleiste automatisch, wenn sich die Anwendung im Vollbild-Modus befindet. Beachte, dass die Menüleiste immer sichtbar ist, wenn die Anwendung nicht im Vollbild-Modus ist.</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="334"/>
@@ -2365,22 +2365,22 @@ Wenn aktiviert, wird das Protokoll mit jedem neuen Eintrag nach oben weitergebl�
     <message>
         <location filename="../widgets/settingswidget.cpp" line="426"/>
         <source>Show and Hide Scope</source>
-        <translation>Anzeige Oszilloskop ein-/aus</translation>
+        <translation>Oszilloskop anzeigen/ausblenden</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="427"/>
         <source>Scope Kinds</source>
-        <translation>Oszilloskop-Arten</translation>
+        <translation>Oszilloskoparten</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="435"/>
         <source>Show scopes</source>
-        <translation>Zeige Oszilloskope</translation>
+        <translation>Oszilloskope anzeigen</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="437"/>
         <source>Show scope labels</source>
-        <translation>Zeige Oszilloskop-Beschriftungen</translation>
+        <translation>Zeige Oszilloskopbeschriftungen</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="515"/>
@@ -2396,7 +2396,7 @@ Wenn aktiviert, wird das Protokoll mit jedem neuen Eintrag nach oben weitergebl�
     <message>
         <location filename="../widgets/settingswidget.cpp" line="521"/>
         <source>Change the language of the UI &amp; Tutorial (Requires a restart to take effect)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändere die Sprache von Benutzeroberfläche &amp; Anleitung (Erfordert Neustart)</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="525"/>
@@ -2407,8 +2407,8 @@ Wenn aktiviert, wird das Protokoll mit jedem neuen Eintrag nach oben weitergebl�
         <location filename="../widgets/settingswidget.cpp" line="532"/>
         <source>Translations have been generously provided by volunteers 
 on https://hosted.weblate.org/projects/sonic-pi/. Thank you! :)</source>
-        <translation>Die Übersetzungen wurden großzügigerweise von Freiwilligen zur Verfügung gestellt
-auf https://hosted.weblate.org/projects/sonic-pi/. Dankeschön! :)</translation>
+        <translation>Übersetzungen wurden großzügiger Weise von Freiwilligen auf
+https://hosted.weblate.org/projects/sonic-pi/ zur Verfügung gestellt. Danke euch! :)</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="627"/>
@@ -2428,13 +2428,14 @@ auf https://hosted.weblate.org/projects/sonic-pi/. Dankeschön! :)</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="637"/>
         <source>System language found: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Systemsprache gefunden: %1</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="921"/>
         <source>System language: %1
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Systemsprache: %1
+</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="641"/>
@@ -2456,7 +2457,7 @@ auf https://hosted.weblate.org/projects/sonic-pi/. Dankeschön! :)</translation>
         <location filename="../widgets/settingswidget.cpp" line="654"/>
         <source>Current UI language: %1
 </source>
-        <translation>Derzeitige Benutzeroberflächen Sprache: %1
+        <translation>Derzeitige Sprache der Benutzeroberfläche: %1
 </translation>
     </message>
     <message>
@@ -2544,7 +2545,7 @@ Stereo - zeigt zwei Oszilloskope an, eines oben für den linken und eines unten 
         <source>Toggle automatic update checking.
 This check involves sending anonymous information about your platform and version.</source>
         <translation>Automatische Suche nach Aktualisierungen ein-/ausschalten.
-Diese Suche versendet anonymisierte Informationen über die verwendete Plattform und Version.</translation>
+Diese Suche sendet anonymisierte Informationen über die verwendete Plattform und Version.</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="474"/>
