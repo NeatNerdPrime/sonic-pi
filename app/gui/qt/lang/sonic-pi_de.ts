@@ -485,7 +485,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="3488"/>
         <source>Tap Tempo</source>
-        <translation>Tippe Tempo</translation>
+        <translation>Tipptempo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2989"/>
