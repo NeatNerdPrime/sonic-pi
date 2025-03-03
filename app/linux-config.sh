@@ -39,5 +39,5 @@ mkdir -p "${SCRIPT_DIR}/build"
 echo "Generating makefiles..."
 cd "${SCRIPT_DIR}/build"
 
-cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="$config"
+cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="$config" ..
 
