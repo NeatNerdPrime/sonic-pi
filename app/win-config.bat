@@ -17,5 +17,9 @@ cd build
 @REM build files for app/external
 
 cmake -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE=%CONFIG% ..\
+if %ERRORLEVEL% neq 0 (
+    cd %WORKING_DIR%
+    exit /b %ERRORLEVEL%
+)
 
 cd %WORKING_DIR%
