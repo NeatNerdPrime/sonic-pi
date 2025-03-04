@@ -15,8 +15,10 @@ set(KISSNET_VERSION "kissnet-master-34b751b" CACHE INTERNAL "Version string for 
 set(GHC_FILESYSTEM_VERSION "ghc_filesystem" CACHE INTERNAL "Version string for ghc_filesystem")
 set(TLSF_VERSION "TLSF-2.4.6" CACHE INTERNAL "Version string for TLSF")
 
-# Define the KissFFT DLL path using the defined version.
-set(API_VENDORED_KISSFFT_DLL "${VENDOR_DIR}/${KISSFFT_VERSION}/kissfft.dll" PARENT_SCOPE)
+if(WIN32)
+    # Define the KissFFT dll path for Windows
+    set(API_VENDORED_KISSFFT_DLL "${CMAKE_SOURCE_DIR}/build/${KISSFFT_VERSION}/Release/kissfft-float.dll" PARENT_SCOPE)
+endif()
 
 # Specify unique binary directories for each vendored project.
 add_subdirectory("${VENDOR_DIR}/${PLATFORMFOLDERS_VERSION}" "${CMAKE_BINARY_DIR}/${PLATFORMFOLDERS_VERSION}")
