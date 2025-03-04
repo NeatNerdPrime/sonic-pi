@@ -7,17 +7,27 @@ set(VENDOR_DIR "${API_ROOT}/vendor")
 set(KISSFFT_TEST OFF CACHE BOOL "Disable kissfft tests" FORCE)
 set(REPROC++ ON CACHE BOOL "Build reproc++" FORCE)
 
-add_subdirectory("${VENDOR_DIR}/PlatformFolders-4.2.0")
-add_subdirectory("${VENDOR_DIR}/reproc-14.2.5")
-add_subdirectory("${VENDOR_DIR}/kissfft-131.1.0")
+# Update these if vendored versions change.
+set(KISSFFT_VERSION "kissfft-131.1.0" CACHE INTERNAL "Version string for KissFFT")
+set(REPROC_VERSION "reproc-14.2.5" CACHE INTERNAL "Version string for Reproc")
+set(PLATFORMFOLDERS_VERSION "PlatformFolders-4.2.0" CACHE INTERNAL "Version string for PlatformFolders")
+set(KISSNET_VERSION "kissnet-master-34b751b" CACHE INTERNAL "Version string for Kissnet")
+set(GHC_FILESYSTEM_VERSION "ghc_filesystem" CACHE INTERNAL "Version string for ghc_filesystem")
+set(TLSF_VERSION "TLSF-2.4.6" CACHE INTERNAL "Version string for TLSF")
 
+# Define the KissFFT DLL path using the defined version.
+set(API_VENDORED_KISSFFT_DLL "${VENDOR_DIR}/${KISSFFT_VERSION}/kissfft.dll" PARENT_SCOPE)
+
+# Specify unique binary directories for each vendored project.
+add_subdirectory("${VENDOR_DIR}/${PLATFORMFOLDERS_VERSION}" "${CMAKE_BINARY_DIR}/${PLATFORMFOLDERS_VERSION}")
+add_subdirectory("${VENDOR_DIR}/${REPROC_VERSION}" "${CMAKE_BINARY_DIR}/${REPROC_VERSION}")
+add_subdirectory("${VENDOR_DIR}/${KISSFFT_VERSION}" "${CMAKE_BINARY_DIR}/${KISSFFT_VERSION}")
 
 add_library(ghc_filesystem INTERFACE)
 target_include_directories(ghc_filesystem INTERFACE "${VENDOR_DIR}/ghc_filesystem/include")
 
 add_library(kissnet INTERFACE)
-target_include_directories(kissnet INTERFACE "${VENDOR_DIR}/kissnet-master-34b751b")
-
+target_include_directories(kissnet INTERFACE "${VENDOR_DIR}/${KISSNET_VERSION}")
 
 set(API_SRC
     ${API_ROOT}/src/sonicpi_api.cpp
@@ -28,7 +38,7 @@ set(API_SRC
     ${API_ROOT}/include/api/file_utils.h
     ${API_ROOT}/include/api/logger.h
 
-    ${VENDOR_DIR}/TLSF-2.4.6/src/tlsf.c
+    ${VENDOR_DIR}/${TLSF_VERSION}/src/tlsf.c
 )
 
 set(OSC_SRC
@@ -85,15 +95,16 @@ endif()
 target_include_directories(${PROJECT_NAME}
     PUBLIC
         ${API_ROOT}/include
-        ${VENDOR_DIR}/ghc_filesystem/include
-        ${VENDOR_DIR}/kissnet-master-34b751b
-        ${VENDOR_DIR}/reproc-14.2.5/reproc++/include
-        ${VENDOR_DIR}/PlatformFolders-4.2.0
-        ${VENDOR_DIR}/kissnet-master-34b751b/
-        ${VENDOR_DIR}/kissfft-131.1.0/
+
+        ${VENDOR_DIR}/${GHC_FILESYSTEM_VERSION}/include
+        ${VENDOR_DIR}/${KISSNET_VERSION}
+        ${VENDOR_DIR}/${REPROC_VERSION}/reproc++/include
+        ${VENDOR_DIR}/${PLATFORMFOLDERS_VERSION}
+        ${VENDOR_DIR}/${KISSNET_VERSION}
+        ${VENDOR_DIR}/${KISSFFT_VERSION}
 
     PRIVATE
-        ${VENDOR_DIR}/TLSF-2.4.6/src
+        ${VENDOR_DIR}/${TLSF_VERSION}/src
 )
 
 # Link to the vendored targets

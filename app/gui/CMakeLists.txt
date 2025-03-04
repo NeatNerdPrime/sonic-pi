@@ -372,7 +372,7 @@ if(WIN32)
     # Copy kissfft.dll from the API build directory to the GUI executable directory
     add_custom_command(TARGET ${APP_NAME} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
-            "${CMAKE_SOURCE_DIR}/build/api/vendor/kissfft-131.1.0/Release/kissfft-float.dll"
+            ${API_VENDORED_KISSFFT_DLL}
             $<TARGET_FILE_DIR:${APP_NAME}>)
 
     # Run winddeployqt if it can be found, to ensure installed dependencies
