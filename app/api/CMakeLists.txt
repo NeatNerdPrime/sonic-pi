@@ -17,7 +17,7 @@ set(TLSF_VERSION "TLSF-2.4.6" CACHE INTERNAL "Version string for TLSF")
 
 if(WIN32)
     # Define the KissFFT dll path for Windows
-    set(API_VENDORED_KISSFFT_DLL "${CMAKE_SOURCE_DIR}/build/${KISSFFT_VERSION}/Release/kissfft-float.dll" PARENT_SCOPE)
+    set(API_VENDORED_KISSFFT_DLL "${CMAKE_SOURCE_DIR}/build/${KISSFFT_VERSION}/${CMAKE_BUILD_TYPE}/kissfft-float.dll" PARENT_SCOPE)
 endif()
 
 # Specify unique binary directories for each vendored project.
