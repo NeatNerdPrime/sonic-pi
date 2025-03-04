@@ -47,4 +47,12 @@ if(TEST_SOURCES)
 
   SOURCE_GROUP(tests REGULAR_EXPRESSION ".*.test.(cpp|h)+")
   SOURCE_GROUP(tests FILES ${TEST_SOURCES})
+
+  if(WIN32)
+  add_custom_command(TARGET ${APP_NAME} POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            "${CMAKE_SOURCE_DIR}/build/api/vendor/kissfft-131.1.0/Release/kissfft-float.dll"
+            $<TARGET_FILE_DIR:${APP_NAME}>)
+
+  endif()
 endif()
