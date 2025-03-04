@@ -41,9 +41,9 @@ In order to build Sonic Pi's various components, we need to install a few
 dependencies:
 
 1. Visual Studio 2022
-2. Qt (6.7+)
+2. Qt (6.8+)
 3. CMake (3.29+)
-4. Ruby (3.3.1+)
+4. Ruby (3.4.2+)
 5. Elixir (1.16+)
 
 Let's look at each in turn.
@@ -64,7 +64,7 @@ Note that you need to enable the "Desktop development with C++" workload. See: h
 Install the latest version of Qt6 (note that Qt5 may work on Windows but isn't supported) - ensure
 you pick 64 bit options for msvc:
 
-https://download.qt.io/official_releases/qt/6.7/6.7.0/single/qt-everywhere-src-6.7.0.zip
+https://download.qt.io/official_releases/qt/6.8/6.8.2/single/qt-everywhere-src-6.8.2.zip
 
 When selecting Qt components you need:
 
@@ -90,10 +90,10 @@ Alternatively, the `setx` command can make global variables. (Note that
 after using `setx` the command line needs to be restarted for it to take
 effect).
 
-For example, if you installed Qt to `C:\Qt\Qt6.7.0` then you could run:
+For example, if you installed Qt to `C:\Qt\Qt6.8.2` then you could run:
 
 ```
-setx QT_INSTALL_LOCATION C:\Qt\6.7.0\msvc2019_64
+setx QT_INSTALL_LOCATION C:\Qt\6.8.2\msvc2019_64
 ```
 
 (followed by restarting your command prompt)
@@ -113,9 +113,9 @@ Ruby is needed both for a number of the build steps and as the main
 runtime for the language server. We need to install both it and some
 additional libraries.
 
-Firstly, install the latest version of Ruby (3.3.1 - 64 bit with devkit) from:
+Firstly, install the latest version of Ruby (3.4.2 - 64 bit with devkit) from:
 
-https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.3.1-1/rubyinstaller-devkit-3.3.1-1-x64.exe
+https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.4.2-1/rubyinstaller-devkit-3.4.2-1-x64.exe
 
 Once you have installed Ruby, you need to grab some additional
 libraries. We can do this from the command prompt with the following:
@@ -126,16 +126,6 @@ gem install rugged
 
 This uses the Ruby library management tool `gem` to install rugged which is used to
 store the code diffs in a local Git repository.
-
-Note - with Ruby 3.3.1 you will need to modify line 321 of `lib\ruby\3.3.0\win32\registry.rb` from:
-
-```
-data = "\0".force_encoding('ASCII-8BIT') * unpackdw(size)
-```
-to
-```
-data = "\0".b * unpackdw(size)
-```
 
 ### 1.5 Install Elixir
 
@@ -179,17 +169,17 @@ change any future references to `C:\dev\sonic-pi` to your chosen location.
 Next, we need to point your build of Sonic Pi to your local Ruby
 installation. We can do this by creating a folder link - similar to a
 symbolic link on Linux and macOS. First, find out where you installed
-Ruby. For example, this might be `C:\Ruby33-x64`.
+Ruby. For example, this might be `C:\Ruby34-x64`.
 
 Finally, open a console as administrator (this is necessary for making the
 link). Then `cd` into the `sonic-pi\app\server\native` directory within
 your copy of Sonic Pi's source. For example, if you put Sonic Pi within
-`C:\dev` and installed Ruby to `C:\Ruby33-x64` then you'd do the
+`C:\dev` and installed Ruby to `C:\Ruby34-x64` then you'd do the
 following:
 
 ```
 cd C:\dev\sonic-pi\app\server\native
-mklink /d ruby C:\Ruby33-x64
+mklink /d ruby C:\Ruby34-x64
 ```
 
 
@@ -247,10 +237,6 @@ https://in-thread.sonic-pi.net
 ## Tips
 - Error logs are written to `%USERPROFILE%\.sonic-pi\logs`, and are useful
   to diagnose any startup problems.
-- If a rebuild errors at the final stage of copying files, or you are
-  otherwise having trouble starting Sonic Pi, there is
-  win-killprocess.bat to remove Sonic Pi from memory.  This will also
-  kill SuperCollider if it has been left running.
 - 32bit and 64bit don't mix. Build the one you want in a clean tree.
   Make sure you also install all the right 32/64 bit components to match
   your build. 64bit is recommended on modern machines.
@@ -260,4 +246,3 @@ https://in-thread.sonic-pi.net
 - If you're already familiar with Visual Studio you should be able to
   take the existing solution file from within the `build` directory
   and build things with that.
-
