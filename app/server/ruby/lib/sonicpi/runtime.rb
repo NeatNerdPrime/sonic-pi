@@ -1135,12 +1135,12 @@ module SonicPi
 
               if (!parent_t.alive?) && parent_subthreads.empty?
                 # signal that the parent's subthreads are now empty and completed
-                yo_prom = __system_thread_locals(parent_t).get(:sonic_pi_local_spider_subthread_empty)
-                if yo_prom
-                  yo_prom.deliver!(true)
+                subthread_empty_prom = __system_thread_locals(parent_t).get(:sonic_pi_local_spider_subthread_empty)
+                if subthread_empty_prom
+                  subthread_empty_prom.deliver!(true)
                 else
-                  log "Oh crap where is yo_prom????"
-                  log "#{__system_thread_locals(parent_t).get(:sonic_pi_local_thread_group)}"
+                  log "Subthread empty promise not found for parent thread:"
+                  log "  - #{__system_thread_locals(parent_t).get(:sonic_pi_local_thread_group)}"
                 end
               end
 
