@@ -1708,11 +1708,11 @@ QString MainWindow::currentTabLabel()
 bool MainWindow::loadFile()
 {
     QString selfilter = QString("%1 (*.rb *.txt)").arg(tr("Buffer files"));
-    QString lastDir = gui_settings->value("lastDir", QDir::homePath() + "/Desktop").toString();
-    QString fileName = QFileDialog::getOpenFileName(this, tr("Load Sonic Pi Buffer"), lastDir, QString("%1 (*.rb *.txt);;%2 (*.txt);;%3 (*.rb);;%4 (*.*)").arg(tr("Buffer files")).arg(tr("Text files")).arg(tr("Ruby files")).arg(tr("All files")), &selfilter);
+    QString lastBufferDir = gui_settings->value("lastBufferDir", QDir::homePath() + "/Desktop").toString();
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Load Sonic Pi Buffer"), lastBufferDir, QString("%1 (*.rb *.txt);;%2 (*.txt);;%3 (*.rb);;%4 (*.*)").arg(tr("Buffer files")).arg(tr("Text files")).arg(tr("Ruby files")).arg(tr("All files")), &selfilter);
     if (!fileName.isEmpty())
     {
-        gui_settings->setValue("lastDir", QDir(fileName).absolutePath());
+        gui_settings->setValue("lastBufferDir", QDir(fileName).absolutePath());
         SonicPiScintilla* p = getCurrentWorkspace();
         loadFile(fileName, p);
         return true;
@@ -1726,12 +1726,12 @@ bool MainWindow::loadFile()
 bool MainWindow::saveAs()
 {
     QString selfilter = QString("%1 (*.rb *.txt)").arg(tr("Buffer files"));
-    QString lastDir = gui_settings->value("lastDir", QDir::homePath() + "/Desktop").toString();
-    QString fileName = QFileDialog::getSaveFileName(this, tr("Save Current Buffer"), lastDir, QString("%1 (*.rb *.txt);;%2 (*.txt);;%3 (*.rb);;%4 (*.*)").arg(tr("Buffer files")).arg(tr("Text files")).arg(tr("Ruby files")).arg(tr("All files")), &selfilter);
+    QString lastBufferDir = gui_settings->value("lastBufferDir", QDir::homePath() + "/Desktop").toString();
+    QString fileName = QFileDialog::getSaveFileName(this, tr("Save Current Buffer"), lastBufferDir, QString("%1 (*.rb *.txt);;%2 (*.txt);;%3 (*.rb);;%4 (*.*)").arg(tr("Buffer files")).arg(tr("Text files")).arg(tr("Ruby files")).arg(tr("All files")), &selfilter);
 
     if (!fileName.isEmpty())
     {
-        gui_settings->setValue("lastDir", QDir(fileName).absolutePath());
+        gui_settings->setValue("lastBufferDir", QDir(fileName).absolutePath());
         if (!fileName.contains(QRegularExpression("\\.[a-z]+$")))
         {
             fileName = fileName + ".txt";
@@ -4210,11 +4210,11 @@ void MainWindow::toggleRecording()
         Message msg("/stop-recording");
         msg.pushInt32(guiID);
         sendOSC(msg);
-        QString lastDir = gui_settings->value("lastDir", QDir::homePath() + "/Desktop").toString();
-        QString fileName = QFileDialog::getSaveFileName(this, tr("Save Recording"), lastDir, tr("Wavefile (*.wav)"));
+        QString lastAudioDir = gui_settings->value("lastAudioDir", QDir::homePath() + "/Desktop").toString();
+        QString fileName = QFileDialog::getSaveFileName(this, tr("Save Recording"), lastAudioDir, tr("Wavefile (*.wav)"));
         if (!fileName.isEmpty())
         {
-            gui_settings->setValue("lastDir", QDir(fileName).absolutePath());
+            gui_settings->setValue("lastAudioDir", QDir(fileName).absolutePath());
             Message msg("/save-recording");
             msg.pushInt32(guiID);
             msg.pushStr(fileName.toStdString());
