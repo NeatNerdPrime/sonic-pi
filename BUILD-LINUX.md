@@ -78,7 +78,7 @@ following methods:
 * Get newer packaged versions of Elixir from [Erlang Solutions' repository](https://www.erlang-solutions.com/downloads/) (though installing packages from outside your distros main repository is at your own risk!)
 * Build and install it yourself
 
-There is an Audinux Copr [repository](https://copr.fedorainfracloud.org/coprs/ycollet/audinux/package/sonic-pi/) with Sonic-Pi.
+There is an Audinux Copr [repository](https://copr.fedorainfracloud.org/coprs/ycollet/audinux/package/sonic-pi/) with Sonic Pi.
 
 ## 2. Preparing the Build
 
