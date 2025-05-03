@@ -337,7 +337,7 @@
         <location filename="../mainwindow.cpp" line="2934"/>
         <location filename="../mainwindow.cpp" line="3272"/>
         <source>Comment/Uncomment code</source>
-        <translation>Commenter/décommanter le code</translation>
+        <translation>Commenter/décommenter le code</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2935"/>
