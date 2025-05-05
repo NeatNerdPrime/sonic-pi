@@ -345,6 +345,9 @@ QMap<QString, QString> SonicPiTheme::lightTheme(){
     themeSettings["HereDocumentForeground"]          = dt_green;
     themeSettings["HereDocumentBackground"]          = theme_bg;
 
+    themeSettings["PercentStringqForeground"]        = dt_green;
+    themeSettings["PercentStringqBackground"]        = theme_bg;
+
     themeSettings["PercentStringForeground"]         = dt_green;
     themeSettings["PercentStringQForeground"]        = dt_green;
 
@@ -536,6 +539,9 @@ QMap<QString, QString> SonicPiTheme::darkTheme(){
 
     themeSettings["BackticksForeground"]             = dt_warning;
     themeSettings["BackticksBackground"]             = dt_gold;
+
+    themeSettings["PercentStringqForeground"]        = dt_green;
+    themeSettings["PercentStringqBackground"]        = dt_black;
 
     themeSettings["PercentStringxForeground"]        = dt_not_supported;
     themeSettings["DataSectionForeground"]           = dt_not_supported;
