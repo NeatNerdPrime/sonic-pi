@@ -42,8 +42,19 @@ defmodule Tau.HydraSynthLang do
                              end)
 
   def convert_global_syntax_to_instance(code_str) do
+    # Compile regexes at runtime
+    hydra_global_fns_regexp =
+      Enum.map(@hydra_global_fns_patterns, fn {el, pattern} ->
+        {el, Regex.compile!(pattern)}
+      end)
+
+    hydra_global_attrs_regexp =
+      Enum.map(@hydra_global_attrs_patterns, fn {el, pattern} ->
+        {el, Regex.compile!(pattern)}
+      end)
+
     code_str =
-      Enum.reduce(@hydra_global_fns_regexp, code_str, fn {el, regexp}, res ->
+      Enum.reduce(hydra_global_fns_regexp, code_str, fn {el, regexp}, res ->
         String.replace(res, regexp, "hydra.#{el}(")
       end)
 
@@ -54,7 +65,7 @@ defmodule Tau.HydraSynthLang do
         "({___time___})"
       )
 
-    Enum.reduce(@hydra_global_attrs_regexp, code_str, fn {el, regexp}, res ->
+    Enum.reduce(hydra_global_attrs_regexp, code_str, fn {el, regexp}, res ->
       String.replace(res, regexp, "hydra.#{el}")
     end)
   end
