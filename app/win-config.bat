@@ -1,5 +1,6 @@
 set WORKING_DIR=%CD%
 set CONFIG=%1
+set SCRIPT_DIR=%~dp0
 cd %~dp0
 if /I "%CONFIG%" == "" (set CONFIG=Release)
 
@@ -16,7 +17,10 @@ cd build
 @REM explicitly, but as we also pass it in here it will be used by the cmake
 @REM build files for app/external
 
-cmake -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE=%CONFIG% -DKISSFFT_TOOLS=OFF -DKISSFFT_PKGCONFIG=OFF ..\
+set "VCPKG_ROOT=%SCRIPT_DIR%vcpkg"
+set "VCPKG_TOOLCHAIN=%VCPKG_ROOT%\scripts\buildsystems\vcpkg.cmake"
+
+cmake -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE=%CONFIG% -DCMAKE_TOOLCHAIN_FILE=%VCPKG_TOOLCHAIN%  -DVCPKG_TARGET_TRIPLET=%VCPKG_TRIPLET% -DKISSFFT_TOOLS=OFF -DKISSFFT_PKGCONFIG=OFF ..\
 if %ERRORLEVEL% neq 0 (
     cd %WORKING_DIR%
     exit /b %ERRORLEVEL%
