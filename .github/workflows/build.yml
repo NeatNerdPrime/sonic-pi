@@ -93,14 +93,15 @@ jobs:
       # Get the code
       - uses: actions/checkout@v4
 
-      - name: Set up CMake
-        uses: lukka/get-cmake@v3.31.6
       # Install Ruby for the windows build
       - uses: ruby/setup-ruby@v1
         id: ruby-inst
         with:
           ruby-version: 3.4.1
         if: matrix.os == 'windows-latest'
+
+      - name: Set up CMake
+        uses: lukka/get-cmake@v3.31.6
 
       # Install gems Windows
       - name: Setup Ruby Windows
