@@ -101,7 +101,7 @@ jobs:
         if: matrix.os == 'windows-latest'
 
       - name: Set up CMake
-        uses: lukka/get-cmake@v3.31.6
+        uses: lukka/get-cmake@v4.0.2
 
       # Install gems Windows
       - name: Setup Ruby Windows
