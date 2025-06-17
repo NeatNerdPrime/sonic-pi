@@ -1695,7 +1695,7 @@ Získejte Sonic Pi %1</translation>
         <location filename="../mainwindow.cpp" line="4373"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Nelze přečíst soubor  %1:
+        <translation>Nelze přečíst soubor %1:
 %2.</translation>
     </message>
     <message>
@@ -1929,7 +1929,9 @@ který není rozpoznán.</translation>
         <source>Sonic Pi can send and receive Open Sound Control messages
 to and from other programs or computers
  via the currently connected network.</source>
-        <translation type="unfinished">Sonic Pi může odesílat a přijímat zprávy Open Sound Control do a z jiných programů nebo počítačů prostřednictvím aktuálně připojené sítě.</translation>
+        <translation>Sonic Pi může odesílat a přijímat zprávy Open Sound Control do 
+a z jiných programů nebo počítačů 
+prostřednictvím aktuálně připojené sítě.</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="155"/>
@@ -2321,8 +2323,9 @@ samplu nebudou automaticky zaznamenány do protokolu.</translation>
         <source>Toggle log clearing on run.
 If enabled, the log is cleared each
 time the run button is pressed.</source>
-        <translation type="unfinished">Přepínač vymazání protokolu při startu
-Pokud aktivováno, záznam se smaže vždy, když se stiskne tlačítko Spustit.</translation>
+        <translation>Přepínač vymazání protokolu při startu
+Pokud aktivováno, záznam se smaže vždy,
+ když se stiskne tlačítko Spustit.</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="392"/>
