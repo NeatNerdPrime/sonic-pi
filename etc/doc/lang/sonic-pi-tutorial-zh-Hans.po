@@ -2515,9 +2515,10 @@ msgid "Local Samples"
 msgstr "本地采样"
 
 #: 03.6-External-Samples.md:28
+#, fuzzy
 msgid ""
-"So how do you play any arbitrary WAV, AIFF, OGG, OGA or FLAC file on your comp"
-"uter? All you need to do is pass the path of that file to `sample`:"
+"So how do you play any arbitrary WAV, AIFF, OGG, OGA, FLAC or MP3 file on your"
+" computer? All you need to do is pass the path of that file to `sample`:"
 msgstr "那么如何在电脑上播放任意WAV、AIFF、OGG、OGA或FLAC文件呢？你需要做的就是将该文件的路径传递给`sample`："
 
 #: 03.6-External-Samples.md:31
@@ -2805,11 +2806,12 @@ msgid "`\"/path/to/samples/foo.wav\"` - a string representing a valid path to a 
 msgstr "`\"/path/to/samples/foo.wav\"` - 代表某个路径下的采样文件的字符串"
 
 #: 03.7-Sample-Packs.md:145
+#, fuzzy
 msgid ""
 "The `sample` fn will first gather all sources and use them to create a large l"
 "ist of candidates. This list is constructed by first adding all valid paths an"
-"d then by adding all the valid `.flac`, `.aif`, `.aiff`, `.wav`, `.wave` files"
-" contained within the directories."
+"d then by adding all the valid `.flac`, `.aif`, `.aiff`, `.wav`, `.wave`, `.mp"
+"3` files contained within the directories."
 msgstr ""
 "`sample`的这个功能首先会搜集所有的采样来源，形成一个备选采样的大列表。这个列表由所有可用的采样来源目录下的`.flac`, `.aif`, `.ai"
 "ff`, `.wav`, `.wave`这几类文件组成。"

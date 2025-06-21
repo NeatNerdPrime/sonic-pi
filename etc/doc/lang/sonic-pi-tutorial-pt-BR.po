@@ -2968,9 +2968,10 @@ msgid "Local Samples"
 msgstr "Samples Locais"
 
 #: 03.6-External-Samples.md:28
+#, fuzzy
 msgid ""
-"So how do you play any arbitrary WAV, AIFF, OGG, OGA or FLAC file on your comp"
-"uter? All you need to do is pass the path of that file to `sample`:"
+"So how do you play any arbitrary WAV, AIFF, OGG, OGA, FLAC or MP3 file on your"
+" computer? All you need to do is pass the path of that file to `sample`:"
 msgstr ""
 "Então, como que você reproduz um arquivo qualquer WAV, AIFF, OGG, OGA ou FLAC "
 "do seu computador? Tudo o que precisa fazer é passar o caminho daquele arquivo"
@@ -3243,8 +3244,8 @@ msgstr ""
 msgid ""
 "The `sample` fn will first gather all sources and use them to create a large l"
 "ist of candidates. This list is constructed by first adding all valid paths an"
-"d then by adding all the valid `.flac`, `.aif`, `.aiff`, `.wav`, `.wave` files"
-" contained within the directories."
+"d then by adding all the valid `.flac`, `.aif`, `.aiff`, `.wav`, `.wave`, `.mp"
+"3` files contained within the directories."
 msgstr ""
 
 #: 03.7-Sample-Packs.md:150
