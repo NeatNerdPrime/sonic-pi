@@ -131,7 +131,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="1542"/>
         <source>Sonic Pi Boot Error</source>
-        <translation>Sonc Pi 启动错误</translation>
+        <translation>Sonic Pi 启动错误</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1712"/>
@@ -284,7 +284,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="2384"/>
         <source>Colour Theme: </source>
-        <translation>色彩主题 </translation>
+        <translation>色彩主题: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2557"/>
@@ -336,7 +336,7 @@
         <location filename="../mainwindow.cpp" line="2983"/>
         <location filename="../mainwindow.cpp" line="3326"/>
         <source>Transpose Characters</source>
-        <translation type="unfinished"></translation>
+        <translation>交换字符位置</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2984"/>
@@ -371,7 +371,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="2990"/>
         <source>Cut to the end of the line</source>
-        <translation type="unfinished"></translation>
+        <translation>剪切至行尾</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2991"/>
@@ -456,12 +456,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="3008"/>
         <source>Delete word to the right</source>
-        <translation type="unfinished"></translation>
+        <translation>删除右侧单词</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3009"/>
         <source>Delete word to the left</source>
-        <translation type="unfinished"></translation>
+        <translation>删除左侧单词</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3010"/>
@@ -476,7 +476,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="3013"/>
         <source>Set a mark in the text</source>
-        <translation type="unfinished"></translation>
+        <translation>在文本中设置标记</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3015"/>
@@ -551,17 +551,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="3038"/>
         <source>Place focus on the logs</source>
-        <translation type="unfinished"></translation>
+        <translation>将焦点放在日志上</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3047"/>
         <source>Show or hide the buttons</source>
-        <translation type="unfinished"></translation>
+        <translation>显示或隐藏按钮</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3048"/>
         <source>Show or hide the cue log</source>
-        <translation type="unfinished"></translation>
+        <translation>显示或隐藏提示日志</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3049"/>
@@ -613,7 +613,7 @@
         <location filename="../mainwindow.cpp" line="5292"/>
         <location filename="../mainwindow.cpp" line="5306"/>
         <source>For the curious among you, Sonic Pi automatically stores the contents of the code buffers, configuration files and logs in a folder called .sonic-pi which typically resides in your home directory.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果您想了解更多细节，Sonic Pi会自动将代码缓冲区内容、配置文件和日志存储在名为.sonic-pi的文件夹中，该文件夹通常位于您的主目录中。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5293"/>
@@ -739,7 +739,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="3036"/>
         <source>Click Link Tap Tempo</source>
-        <translation type="unfinished"></translation>
+        <translation>点击Link节拍器确定速度</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3540"/>
@@ -769,22 +769,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="3565"/>
         <source>Enable Incoming MIDI Cues</source>
-        <translation type="unfinished"></translation>
+        <translation>启用传入的MIDI提示</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3570"/>
         <source>Allow Incoming OSC</source>
-        <translation type="unfinished"></translation>
+        <translation>允许传入OSC</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3575"/>
         <source>Allow OSC From Other Computers</source>
-        <translation type="unfinished"></translation>
+        <translation>允许来自其他计算机的OSC</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3580"/>
         <source>Log Cues</source>
-        <translation type="unfinished"></translation>
+        <translation>记录提示</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3585"/>
@@ -998,7 +998,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="3881"/>
         <source>Incoming OSC Port</source>
-        <translation type="unfinished"></translation>
+        <translation>传入OSC端口</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3884"/>
@@ -1008,293 +1008,294 @@
     <message>
         <location filename="../mainwindow.cpp" line="3897"/>
         <source>Focus Context</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点上下文</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3039"/>
         <source>Place focus on the context pane</source>
-        <translation type="unfinished"></translation>
+        <translation>将焦点放在上下文窗格上</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3921"/>
         <source>Focus BPM Scrubber</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点BPM微调器</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3045"/>
         <source>Place focus on BPM Scrubber</source>
-        <translation type="unfinished"></translation>
+        <translation>将焦点放在BPM微调器上</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3925"/>
         <source>Focus TimeWarp Scrubber</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点时间调整微调器</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3046"/>
         <source>Place focus on TimeWarp Scrubber</source>
-        <translation type="unfinished"></translation>
+        <translation>将焦点放在时间调整微调器上</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1546"/>
         <source>Apologies, unable to start...
 </source>
-        <translation type="unfinished"></translation>
+        <translation>抱歉，无法启动...
+</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1548"/>
         <source>Sorry, Sonic Pi is having issues booting:</source>
-        <translation type="unfinished"></translation>
+        <translation>抱歉，Sonic Pi启动时出现问题：</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3004"/>
         <source>Vertically center the caret in the editor</source>
-        <translation type="unfinished"></translation>
+        <translation>在编辑器中垂直居中光标</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3330"/>
         <source>Move Line or Selection Up</source>
-        <translation type="unfinished"></translation>
+        <translation>上移行或选定部分</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3334"/>
         <source>Move Line or Selection Down</source>
-        <translation type="unfinished"></translation>
+        <translation>下移行或选定部分</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3337"/>
         <source>Move Down One Line</source>
-        <translation type="unfinished"></translation>
+        <translation>下移一行</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3340"/>
         <source>Move Up One Line</source>
-        <translation type="unfinished"></translation>
+        <translation>上移一行</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3343"/>
         <source>Move Down Ten Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>下移十行</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3346"/>
         <source>Move Up Ten Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>上移十行</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3349"/>
         <source>Cut to End of Line</source>
-        <translation type="unfinished"></translation>
+        <translation>剪切至行尾</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3352"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3355"/>
         <source>Cut</source>
-        <translation type="unfinished"></translation>
+        <translation>剪切</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3358"/>
         <source>Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>粘贴</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3361"/>
         <source>Move Right</source>
-        <translation type="unfinished"></translation>
+        <translation>右移</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3364"/>
         <source>Move Left</source>
-        <translation type="unfinished"></translation>
+        <translation>左移</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3367"/>
         <source>Delete Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>向前删除</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3370"/>
         <source>Delete Back</source>
-        <translation type="unfinished"></translation>
+        <translation>向后删除</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3373"/>
         <source>Move to Start of Line</source>
-        <translation type="unfinished"></translation>
+        <translation>移至行首</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3376"/>
         <source>Move to End of Line</source>
-        <translation type="unfinished"></translation>
+        <translation>移至行尾</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3379"/>
         <source>Move to Start of Document</source>
-        <translation type="unfinished"></translation>
+        <translation>移至文档开始</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3382"/>
         <source>Move to End of Document</source>
-        <translation type="unfinished"></translation>
+        <translation>移至文档末尾</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3385"/>
         <source>Move Right One Word</source>
-        <translation type="unfinished"></translation>
+        <translation>右移一个单词</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3388"/>
         <source>Move Left One Word</source>
-        <translation type="unfinished"></translation>
+        <translation>左移一个单词</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3391"/>
         <source>Center Cursor Vertically</source>
-        <translation type="unfinished"></translation>
+        <translation>垂直居中光标</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3394"/>
         <source>Undo</source>
-        <translation type="unfinished"></translation>
+        <translation>撤销</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3397"/>
         <source>Redo</source>
-        <translation type="unfinished"></translation>
+        <translation>重做</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3400"/>
         <source>Select All</source>
-        <translation type="unfinished"></translation>
+        <translation>全选</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3403"/>
         <source>Delete Word Left</source>
-        <translation type="unfinished"></translation>
+        <translation>删除左侧单词</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3406"/>
         <source>Delete Word Right</source>
-        <translation type="unfinished"></translation>
+        <translation>删除右侧单词</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3409"/>
         <source>Upcase Word or Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>大写单词或选定部分</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3412"/>
         <source>Downcase Word or Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>小写单词或选定部分</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3416"/>
         <source>Show Docs for Current Word</source>
-        <translation type="unfinished"></translation>
+        <translation>显示当前单词的文档</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3434"/>
         <source>Cycle Themes</source>
-        <translation type="unfinished"></translation>
+        <translation>循环主题</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3456"/>
         <source>Previous Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>上一个标签页</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3460"/>
         <source>Next Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>下一个标签页</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3463"/>
         <source>Focus Tab 1</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点标签页1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3466"/>
         <source>Focus Tab 2</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点标签页2</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3469"/>
         <source>Focus Tab 3</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点标签页3</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3472"/>
         <source>Focus Tab 4</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点标签页4</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3475"/>
         <source>Focus Tab 5</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点标签页5</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3478"/>
         <source>Focus Tab 6</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点标签页6</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3481"/>
         <source>Focus Tab 7</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点标签页7</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3484"/>
         <source>Focus Tab 8</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点标签页8</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3487"/>
         <source>Focus Tab 9</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点标签页9</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3490"/>
         <source>Focus Tab 0</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点标签页0</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3595"/>
         <source>Auto Indent Code Buffer</source>
-        <translation type="unfinished"></translation>
+        <translation>自动缩进代码缓冲区</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3605"/>
         <source>Set Mark</source>
-        <translation type="unfinished"></translation>
+        <translation>设置标记</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3722"/>
         <source>Emacs Live Shortcut Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Emacs Live快捷键模式</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3727"/>
         <source>Windows Shortcut Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Windows快捷键模式</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3732"/>
         <source>Mac Shortcut Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mac快捷键模式</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3737"/>
         <source>User Shortcut Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>用户快捷键模式</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3765"/>
         <source>Shortcut Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>快捷键模式</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3928"/>
@@ -1309,7 +1310,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="3938"/>
         <source>Show Metronome</source>
-        <translation type="unfinished"></translation>
+        <translation>显示节拍器</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3943"/>
@@ -1329,17 +1330,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="3958"/>
         <source>Zoom In Logs</source>
-        <translation type="unfinished"></translation>
+        <translation>放大日志</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3961"/>
         <source>Zoom Out Logs</source>
-        <translation type="unfinished"></translation>
+        <translation>缩小日志</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3996"/>
         <source>Focus</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="4024"/>
@@ -1354,7 +1355,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="4804"/>
         <source>Enabling MIDI &lt;input&gt;...</source>
-        <translation type="unfinished"></translation>
+        <translation>启用MIDI输入...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="4859"/>
@@ -1399,7 +1400,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="5206"/>
         <source>Please try changing your default OS audio input &amp; outputs.</source>
-        <translation type="unfinished"></translation>
+        <translation>请尝试更改您的默认操作系统音频输入和输出。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5207"/>
@@ -1409,32 +1410,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="5209"/>
         <source>For the curious among you, Sonic Pi uses the SuperCollider Audio Server to generate its sounds. By default it will connect to your default system audio input and outputs.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果您想了解更多细节，Sonic Pi使用SuperCollider音频服务器来生成声音。默认情况下，它将连接到您的默认系统音频输入和输出。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5210"/>
         <source>Unfortunately SuperCollider is having problems starting correctly. You can read the full error log below which should explain why.</source>
-        <translation type="unfinished"></translation>
+        <translation>不幸的是，SuperCollider无法正确启动。您可以阅读下面的完整错误日志，其中应该解释了原因。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5211"/>
         <source>To fix this you can try changing your default operating system audio inputs and outputs (ensuring they have the same audio rate).</source>
-        <translation type="unfinished"></translation>
+        <translation>要解决此问题，您可以尝试更改默认的操作系统音频输入和输出（确保它们具有相同的音频采样率）。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5212"/>
         <source>Advanced Users</source>
-        <translation type="unfinished"></translation>
+        <translation>高级用户</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5213"/>
         <source>you may manually override this and further configure how SuperCollider boots by editing the file:</source>
-        <translation type="unfinished"></translation>
+        <translation>您可以通过编辑以下文件来手动覆盖此设置并进一步配置SuperCollider的启动方式：</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="5215"/>
         <source>SuperCollider Log</source>
-        <translation type="unfinished"></translation>
+        <translation>SuperCollider日志</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3306"/>
@@ -1544,52 +1545,52 @@
     <message>
         <location filename="../mainwindow.cpp" line="3901"/>
         <source>Focus Cues</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点提示</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3040"/>
         <source>Place focus on the cue event pane</source>
-        <translation type="unfinished"></translation>
+        <translation>将焦点放在提示事件窗格上</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3905"/>
         <source>Focus Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点偏好设置</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3041"/>
         <source>Place focus on preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>将焦点放在偏好设置上</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3909"/>
         <source>Focus Help Listing</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点帮助列表</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3042"/>
         <source>Place focus on help listing</source>
-        <translation type="unfinished"></translation>
+        <translation>将焦点放在帮助列表上</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3913"/>
         <source>Focus Help Details</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点帮助详情</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3043"/>
         <source>Place focus on help details</source>
-        <translation type="unfinished"></translation>
+        <translation>将焦点放在帮助详情上</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3917"/>
         <source>Focus Errors</source>
-        <translation type="unfinished"></translation>
+        <translation>焦点错误</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3044"/>
         <source>Place focus on errors</source>
-        <translation type="unfinished"></translation>
+        <translation>将焦点放在错误上</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="4127"/>
@@ -1937,7 +1938,7 @@ Open Sound Control 消息。</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="181"/>
         <source>Allow OSC from other computers</source>
-        <translation type="unfinished"></translation>
+        <translation>允许来自其他计算机的OSC</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="182"/>
@@ -1949,27 +1950,27 @@ Open Sound Control 消息。</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="184"/>
         <source>Allow incoming OSC</source>
-        <translation type="unfinished"></translation>
+        <translation>允许传入OSC</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="208"/>
         <source>all</source>
-        <translation type="unfinished"></translation>
+        <translation>全部</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="231"/>
         <source>Default MIDI out channel</source>
-        <translation type="unfinished"></translation>
+        <translation>默认MIDI输出通道</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="293"/>
         <source>Automatically align code on Enter or Run </source>
-        <translation type="unfinished"></translation>
+        <translation>在按下回车或运行时自动对齐代码</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="298"/>
         <source>Show code completion</source>
-        <translation type="unfinished"></translation>
+        <translation>显示代码补全</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="185"/>
@@ -2005,7 +2006,7 @@ Open Sound Control 消息。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="204"/>
-        <source>Reset MIDI subsystems 
+        <source>Reset MIDI subsystems
 (Required to detect device changes on macOS)</source>
         <translation>重置 MIDI 子系统
 （在 macOS 上需要通过该步骤来检测设备变更）</translation>
@@ -2054,7 +2055,7 @@ Sonic Pi接收以midi_*fns形式发送的MIDI消息</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="74"/>
         <source>Main Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>主音量</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="83"/>
@@ -2064,87 +2065,75 @@ Sonic Pi接收以midi_*fns形式发送的MIDI消息</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="84"/>
         <source>Audio settings for working with audio inputs.</source>
-        <translation type="unfinished"></translation>
+        <translation>用于处理音频输入的音频设置。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="85"/>
         <source>Enable Audio Inputs</source>
-        <translation type="unfinished">启用音频输入</translation>
+        <translation>启用音频输入</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="86"/>
         <source>Toggle to enable or disable audio inputs.</source>
-        <translation type="unfinished"></translation>
+        <translation>切换以启用或禁用音频输入。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="114"/>
         <source>Enable external synths/FX</source>
-        <translation type="unfinished"></translation>
+        <translation>启用外部合成器/效果器</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="127"/>
         <source>Audio Hardware Information</source>
-        <translation type="unfinished"></translation>
+        <translation>音频硬件信息</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="128"/>
         <source>Audio hardware configuration and information.</source>
-        <translation type="unfinished"></translation>
+        <translation>音频硬件配置和信息。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="129"/>
         <source>Information unavailable.</source>
-        <translation type="unfinished"></translation>
+        <translation>信息不可用。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="156"/>
         <source>Incoming OSC port</source>
-        <translation type="unfinished"></translation>
+        <translation>传入OSC端口</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="199"/>
+        <location filename="../widgets/settingswidget.cpp" line="166"/>
         <source>Enable incoming MIDI cues</source>
-        <translation type="unfinished"></translation>
+        <translation>启用传入的MIDI提示</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="200"/>
-        <source>Enable or disable automatic conversion of incoming MIDI messages to cue events</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="232"/>
-        <source>Default MIDI Channel to send messages to (* means all)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="236"/>
-        <source>Default MIDI Channel to send messages to  (* means all)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="283"/>
-        <source>Show Panels</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="284"/>
-        <source>Show and hide information panes such as the scope and log.</source>
-        <translation type="unfinished"></translation>
+        <location filename="../widgets/settingswidget.cpp" line="167"/>
+        <source>When checked, Sonic Pi will allow
+MIDI messages to be received as cue events.
+
+When unchecked, MIDI messages will be ignored
+and no cue events will be generated.</source>
+        <translation>选中时，Sonic Pi将允许
+MIDI消息作为提示事件被接收。
+
+未选中时，MIDI消息将被忽略
+且不会生成提示事件。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="287"/>
-        <source>Theme</source>
-        <translation>主题</translation>
+        <source>Look and Feel</source>
+        <translation>外观</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="289"/>
         <source>Automation / Misc</source>
-        <translation>自动化 / 杂项</translation>
+        <translation>自动化/其他</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="290"/>
         <source>Configure automation and other features.</source>
-        <translation>配置自动化和其他特性。</translation>
+        <translation>配置自动化和其他功能。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="292"/>
@@ -2164,7 +2153,7 @@ Sonic Pi接收以midi_*fns形式发送的MIDI消息</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="299"/>
         <source>When enabled, Sonic Pi&apos;s editor will attempt to autocomplete your code with suggestions. When disabled, these suggestions will not be visible.</source>
-        <translation>当开启时，Sonic Pi编辑器将尝试按照建议自动补全你的代码。当关闭时，这些建议不会显示出来。</translation>
+        <translation>启用后，Sonic Pi的编辑器将尝试使用建议自动完成您的代码。禁用后，这些建议将不可见。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="301"/>
@@ -2174,7 +2163,7 @@ Sonic Pi接收以midi_*fns形式发送的MIDI消息</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="302"/>
         <source>When enabled, Sonic Pi&apos;s editor will show a pane which will display context-specific information for the code such as the current line and position of the cursor.</source>
-        <translation type="unfinished"></translation>
+        <translation>启用后，Sonic Pi的编辑器将显示一个窗格，其中显示代码的上下文特定信息，例如光标的当前行和位置。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="304"/>
@@ -2184,52 +2173,52 @@ Sonic Pi接收以midi_*fns形式发送的MIDI消息</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="305"/>
         <source>Toggle visibility of the log.</source>
-        <translation>切换是否显示日志。</translation>
+        <translation>切换日志是否显示。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="308"/>
         <source>Show cue log</source>
-        <translation>显示标记记录</translation>
+        <translation>显示标记日志</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="309"/>
         <source>Toggle visibility of cue log which displays internal cues &amp; incoming OSC/MIDI messages.</source>
-        <translation>切换是否显示内部标记和外部输入OSC/MIDI信息的标记记录。</translation>
+        <translation>切换标记日志是否显示（标记日志记录内部标记和外部输入的OSC/MIDI消息）。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="312"/>
         <source>Show Link metronome controls</source>
-        <translation type="unfinished"></translation>
+        <translation>显示Link节拍器控件</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="313"/>
         <source>Toggle visibility of the Link metronome controls.</source>
-        <translation type="unfinished"></translation>
+        <translation>切换Link节拍器控件的可见性。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="316"/>
         <source>Show buttons</source>
-        <translation>显示控制按钮</translation>
+        <translation>显示按钮</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="317"/>
         <source>Toggle visibility of the control buttons.</source>
-        <translation>切换是否显示控制按钮。</translation>
+        <translation>切换控制按钮是否显示。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="319"/>
         <source>Show tabs</source>
-        <translation>显示编辑器窗口选择栏</translation>
+        <translation>显示标签页</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="321"/>
         <source>Toggle visibility of the buffer selection tabs.</source>
-        <translation>切换是否显示编辑器窗口Buffer选择标签。</translation>
+        <translation>切换缓冲区选择标签是否显示。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="322"/>
         <source>Full screen</source>
-        <translation>全屏模式</translation>
+        <translation>全屏</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="323"/>
@@ -2239,12 +2228,12 @@ Sonic Pi接收以midi_*fns形式发送的MIDI消息</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="325"/>
         <source>Show titles</source>
-        <translation type="unfinished"></translation>
+        <translation>显示标题</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="326"/>
         <source>Toggle the title visibility for the scope, log, cue and other information panes</source>
-        <translation type="unfinished"></translation>
+        <translation>切换示波器、日志、提示和其他信息窗格的标题可见性</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="329"/>
@@ -2254,7 +2243,7 @@ Sonic Pi接收以midi_*fns形式发送的MIDI消息</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="330"/>
         <source>Automatically hide the menubar when the app is in full screen mode. Note that the menubar is always visible when not in full screen mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>当应用程序处于全屏模式时自动隐藏菜单栏。请注意，在非全屏模式下菜单栏始终可见。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="334"/>
@@ -2269,32 +2258,32 @@ Sonic Pi接收以midi_*fns形式发送的MIDI消息</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="336"/>
         <source>Pro Light</source>
-        <translation>浅色专业版</translation>
+        <translation>专业浅色</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="337"/>
         <source>Pro Dark</source>
-        <translation>深色专业版</translation>
+        <translation>专业深色</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="338"/>
         <source>High Contrast</source>
-        <translation>高对比度模式</translation>
+        <translation>高对比度</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="383"/>
         <source>Logging</source>
-        <translation>日志选项</translation>
+        <translation>日志记录</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="384"/>
         <source>Configure debug behaviour</source>
-        <translation>配置调试选项</translation>
+        <translation>配置调试行为</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="386"/>
         <source>Log synths</source>
-        <translation>记录声音合成事件</translation>
+        <translation>记录合成器</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="387"/>
@@ -2302,73 +2291,73 @@ Sonic Pi接收以midi_*fns形式发送的MIDI消息</translation>
 If disabled, activity such as synth and sample
 triggering will not be printed to the log by default.</source>
         <translation>切换日志消息记录。
-取消该选项时，合成器和采样器活动等事件消息
-默认将不在日志窗口中显示。</translation>
+取消该选项时，合成器和采样事件触发等活动
+将不会被打印到日志。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="389"/>
         <source>Clear log on run</source>
-        <translation>运行代码时清空日志</translation>
+        <translation>重新运行时清空日志</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="390"/>
         <source>Toggle log clearing on run.
 If enabled, the log is cleared each
 time the run button is pressed.</source>
-        <translation>选择是否在运行代码时清空日志窗口。
-若选中该选项，则每次运行代码时，
-日志窗口将自动清空。</translation>
+        <translation>切换运行时清空日志。
+选中该选项时，每当运行按钮被按下时，
+日志将自动清空。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="392"/>
         <source>Log cues</source>
-        <translation>记录提示</translation>
+        <translation>标记日志</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="393"/>
         <source>Enable or disable logging of cues.
 If disabled, cues will still trigger.
 However, they will not be visible in the logs.</source>
-        <translation>是否在日志中记录 cue 信息。
-取消该选项时，cue 仍会被触发，
-但 cue 消息将不会出现在日志中。</translation>
+        <translation>启用或禁用标记日志。
+取消该选项时，标记仍会被触发。
+但它们将不会出现在日志中。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="395"/>
         <source>Auto-scroll log</source>
-        <translation>自动滚动日志显示</translation>
+        <translation>自动滚动日志</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="396"/>
         <source>Toggle log auto scrolling.
 If enabled the log is scrolled to the bottom after every new message is displayed.</source>
-        <translation>是否在有新消息时自动滚动日志窗口。
-选中该选项时，将会在有新的消息出现时自动滚动日志窗口到底部，以使新的消息能够被看到。</translation>
+        <translation>日志自动滚动开关。
+打开该选项，日志窗口将会在有新消息出现时自动滚动到底部。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="422"/>
         <source>Settings useful for performing with Sonic Pi</source>
-        <translation>表演状态帮助功能</translation>
+        <translation>使用Sonic Pi表演时的有用设置</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="426"/>
         <source>Show and Hide Scope</source>
-        <translation>显示／隐藏示波器</translation>
+        <translation>显示和隐藏示波器</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="427"/>
         <source>Scope Kinds</source>
-        <translation>示波器种类</translation>
+        <translation>示波器类型</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="435"/>
         <source>Show scopes</source>
-        <translation type="unfinished"></translation>
+        <translation>显示示波器</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="437"/>
         <source>Show scope labels</source>
-        <translation type="unfinished"></translation>
+        <translation>显示示波器标签</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="515"/>
@@ -2378,122 +2367,126 @@ If enabled the log is scrolled to the bottom after every new message is displaye
     <message>
         <location filename="../widgets/settingswidget.cpp" line="520"/>
         <source>UI &amp; Tutorial Language (Requires a restart to take effect)</source>
-        <translation type="unfinished"></translation>
+        <translation>UI和教程语言（需要重启才能生效）</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="521"/>
-        <source>Change the language of the UI &amp; Tutorial (Requires a restart to take effect)</source>
-        <translation type="unfinished"></translation>
+        <source>Change the language of the UI &amp; Tutorial (Requires a restart to fully take effect)</source>
+        <translation>更改UI和教程的语言（需要重启才能完全生效）</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="525"/>
         <source>Change the language of the UI &amp; Tutorial</source>
-        <translation type="unfinished"></translation>
+        <translation>更改UI和教程的语言</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="532"/>
-        <source>Translations have been generously provided by volunteers 
+        <source>Translations have been generously provided by volunteers
 on https://hosted.weblate.org/projects/sonic-pi/. Thank you! :)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="627"/>
-        <source>You&apos;ve selected a new language: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="629"/>
-        <source>Do you want to apply this language?</source>
-        <translation>确定使用这个语言吗?</translation>
+        <translation>翻译由志愿者慷慨提供
+在 https://hosted.weblate.org/projects/sonic-pi/。谢谢！:)</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="631"/>
+        <source>You&apos;ve selected a new language: %1</source>
+        <translation>您选择了新语言：%1</translation>
+    </message>
+    <message>
+        <location filename="../widgets/settingswidget.cpp" line="633"/>
+        <source>Do you want to apply this language?</source>
+        <translation>您想应用此语言吗？</translation>
+    </message>
+    <message>
+        <location filename="../widgets/settingswidget.cpp" line="635"/>
         <source>The new language will be applied when you next start Sonic Pi.</source>
-        <translation type="unfinished"></translation>
+        <translation>新语言将在您下次启动Sonic Pi时应用。</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="637"/>
-        <source>System language found: %1</source>
-        <translation type="unfinished"></translation>
+        <location filename="../widgets/settingswidget.cpp" line="639"/>
+        <source>System languages found: %1</source>
+        <translation>找到的系统语言：%1</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="921"/>
-        <source>System language: %1
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="641"/>
+        <location filename="../widgets/settingswidget.cpp" line="643"/>
         <source>Apply</source>
         <translation>应用</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="642"/>
-        <location filename="../widgets/settingswidget.cpp" line="689"/>
+        <location filename="../widgets/settingswidget.cpp" line="644"/>
+        <location filename="../widgets/settingswidget.cpp" line="691"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="653"/>
+        <location filename="../widgets/settingswidget.cpp" line="655"/>
         <source>&lt;b&gt;The new language will be applied when you next start Sonic Pi.&lt;/b&gt;&lt;br&gt;</source>
-        <translation>当下次进入 Sonic Pi 时, 将会应用新语言</translation>
+        <translation>&lt;b&gt;新语言将在您下次启动Sonic Pi时应用。&lt;/b&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="654"/>
+        <location filename="../widgets/settingswidget.cpp" line="656"/>
+        <location filename="../widgets/settingswidget.cpp" line="925"/>
         <source>Current UI language: %1
 </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="658"/>
-        <source>Restart Sonic Pi?</source>
-        <translation>重启 Sonic PI?</translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="659"/>
-        <source>Do you want to restart Sonic Pi now? This will stop any current runs &amp; recordings.</source>
-        <translation type="unfinished"></translation>
+        <translation>当前UI语言：%1
+</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="660"/>
-        <location filename="../widgets/settingswidget.cpp" line="688"/>
+        <source>Restart Sonic Pi?</source>
+        <translation>重启Sonic Pi？</translation>
+    </message>
+    <message>
+        <location filename="../widgets/settingswidget.cpp" line="661"/>
+        <source>Do you want to restart Sonic Pi now? This will stop any current runs &amp; recordings.</source>
+        <translation>您想现在重启Sonic Pi吗？这将停止任何当前的运行和录音。</translation>
+    </message>
+    <message>
+        <location filename="../widgets/settingswidget.cpp" line="662"/>
+        <location filename="../widgets/settingswidget.cpp" line="690"/>
         <source>Restart</source>
         <translation>重启</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="661"/>
+        <location filename="../widgets/settingswidget.cpp" line="663"/>
         <source>Dismiss</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="683"/>
-        <source>Audio input change detected.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../widgets/settingswidget.cpp" line="684"/>
-        <source>Your changes won&apos;t take effect until you restart Sonic Pi.</source>
-        <translation type="unfinished"></translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="685"/>
-        <source>Would you like to restart now?</source>
-        <translation>现在是否重启?</translation>
+        <source>Audio input change detected.</source>
+        <translation>检测到音频输入更改。</translation>
     </message>
     <message>
-        <location filename="../widgets/settingswidget.cpp" line="1072"/>
+        <location filename="../widgets/settingswidget.cpp" line="686"/>
+        <source>Your changes won&apos;t take full effect until you restart Sonic Pi.</source>
+        <translation>您的更改要在重启Sonic Pi后才能完全生效。</translation>
+    </message>
+    <message>
+        <location filename="../widgets/settingswidget.cpp" line="687"/>
+        <source>Would you like to restart now?</source>
+        <translation>您想现在重启吗？</translation>
+    </message>
+    <message>
+        <location filename="../widgets/settingswidget.cpp" line="924"/>
+        <source>System languages: %1
+</source>
+        <translation>系统语言：%1
+</translation>
+    </message>
+    <message>
+        <location filename="../widgets/settingswidget.cpp" line="1077"/>
         <source>Use system language</source>
         <translation>使用系统语言</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="436"/>
         <source>Toggle the visibility of the audio oscilloscopes.</source>
-        <translation>切换声音频谱的可见性。</translation>
+        <translation>切换音频示波器的可见性。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="438"/>
         <source>Toggle the visibility of the labels for the audio oscilloscopes</source>
-        <translation>切换声音频谱标签的可见性</translation>
+        <translation>切换音频示波器标签的可见性</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="442"/>
@@ -2505,7 +2498,14 @@ Mirror Stereo - simple left/right composite wave, with left on top, right on bot
 Mono - shows a combined view of the left and right channels (using RMS)
 Spectrum - shows the sound frequencies as a spectrum, from low to high frequencies
 Stereo - shows two independent scopes for left and right channels</source>
-        <translation type="unfinished"></translation>
+        <translation>音频示波器有几种不同的显示方式，可以
+单独查看或一起查看：
+
+利萨茹图形 - 说明左右声道之间的相位关系
+镜像立体声 - 简单的左/右合成波，左在上，右在下
+单声道 - 显示左右声道的组合视图（使用RMS）
+频谱 - 将声音频率显示为频谱，从低频到高频
+立体声 - 为左右声道显示两个独立的示波器</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="449"/>
@@ -2522,19 +2522,19 @@ Stereo - shows two independent scopes for left and right channels</source>
         <source>Toggle automatic update checking.
 This check involves sending anonymous information about your platform and version.</source>
         <translation>切换自动更新检查。
-该选项将向开发者匿名发送当前用户操作系统类型和Sonic Pi版本信息。</translation>
+该检查将向服务器发送有关用户操作系统类型和Sonic Pi版本的匿名信息。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="474"/>
         <source>Check now</source>
-        <translation>立即检查更新</translation>
+        <translation>立即检查</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="477"/>
         <source>Force a check for updates now.
 This check involves sending anonymous information about your platform and version.</source>
         <translation>强制立即检查更新。
-该选项将匿名向开发者发送当前用户操作系统类型和Sonic Pi版本信息。</translation>
+该检查将向服务器发送有关用户操作系统类型和Sonic Pi版本的匿名信息。</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="478"/>
@@ -2555,6 +2555,68 @@ This check involves sending anonymous information about your platform and versio
         <location filename="../widgets/settingswidget.cpp" line="488"/>
         <source>Sonic Pi update info</source>
         <translation>Sonic Pi更新信息</translation>
+    </message>
+</context>
+<context>
+    <name>SonicPiUDPOSCServer</name>
+    <message>
+        <location filename="../osc/sonic_pi_udp_osc_server.cpp" line="38"/>
+        <source>Is Sonic Pi already running?  Can&apos;t open UDP port.</source>
+        <translation>Sonic Pi是否已经在运行？无法打开UDP端口。</translation>
+    </message>
+</context>
+<context>
+    <name>SonicPiTheme</name>
+    <message>
+        <location filename="../theme.cpp" line="781"/>
+        <source>Comment</source>
+        <translation>注释</translation>
+    </message>
+    <message>
+        <location filename="../theme.cpp" line="782"/>
+        <source>Constant</source>
+        <translation>常量</translation>
+    </message>
+    <message>
+        <location filename="../theme.cpp" line="783"/>
+        <source>Symbol</source>
+        <translation>符号</translation>
+    </message>
+    <message>
+        <location filename="../theme.cpp" line="784"/>
+        <source>String</source>
+        <translation>字符串</translation>
+    </message>
+    <message>
+        <location filename="../theme.cpp" line="785"/>
+        <source>Number</source>
+        <translation>数字</translation>
+    </message>
+    <message>
+        <location filename="../theme.cpp" line="786"/>
+        <source>Keyword</source>
+        <translation>关键字</translation>
+    </message>
+    <message>
+        <location filename="../theme.cpp" line="787"/>
+        <source>Operator</source>
+        <translation>运算符</translation>
+    </message>
+    <message>
+        <location filename="../theme.cpp" line="788"/>
+        <source>Command</source>
+        <translation>命令</translation>
+    </message>
+    <message>
+        <location filename="../theme.cpp" line="789"/>
+        <source>Unknown</source>
+        <translation>未知</translation>
+    </message>
+    <message>
+        <location filename="../theme.cpp" line="790"/>
+        <location filename="../theme.cpp" line="791"/>
+        <source>Server Error</source>
+        <translation>服务器错误</translation>
     </message>
 </context>
 </TS>
