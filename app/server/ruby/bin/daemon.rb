@@ -924,7 +924,7 @@ module SonicPi
         @pid_requester = SonicPi::OSC::UDPClient.new('localhost', ports["tau"])
 
         @pid_updater_thread = Thread.new do
-          while !@tau_pid.delivered?
+          while !@tau_pid.delivered? && process_running?
             Util.log "Requesting tau send us its pid. Sending /send-pid-to-daemon"
             begin
               @pid_requester.send("/send-pid-to-daemon", token)
