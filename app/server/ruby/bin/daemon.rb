@@ -976,15 +976,19 @@ module SonicPi
             ENV["RELEASE_SYS_CONFIG"] = "#{Paths.tau_release_sys_config_path}"
             ENV["RELEASE_ROOT"]       = "#{Paths.tau_release_root}"
 
-            cmd = "#{Paths.tau_release_erl_bin_path}".gsub('/', '\\')
-            args = ["-config",                  "#{Paths.tau_release_sys_path}".gsub('/', "\\"),
-                    "-boot",                    "#{Paths.tau_release_start_path}".gsub('/', "\\"),
-                    "-boot_var", "RELEASE_LIB", "#{Paths.tau_release_lib_path}".gsub('/', "\\"),
-                    "-args_file",               "#{Paths.tau_release_vm_args_path}".gsub('/', "\\"),
+            cmd = File.expand_path(Paths.tau_release_erl_bin_path)
+
+            args = ["-config",                  "\"#{File.expand_path(Paths.tau_release_sys_path)}\"",
+                    "-boot",                    "\"#{File.expand_path(Paths.tau_release_start_path)}\"",
+                    "-boot_var", "RELEASE_LIB", "\"#{File.expand_path(Paths.tau_release_lib_path)}\"",
+                    "-args_file",               "\"#{File.expand_path(Paths.tau_release_vm_args_path)}\"",
                     "-noshell",
                     "-s", "elixir", "start_cli",
                     "-mode",    "embedded",
               "-extra",   "--no-halt"]
+
+            Util.log "Windows Tau boot command: #{cmd}"
+            Util.log "Windows Tau boot args: #{args.inspect}"
           else
             cmd = Paths.tau_boot_path
             args = []
