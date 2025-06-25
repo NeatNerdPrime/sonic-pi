@@ -26,18 +26,14 @@
         <!-- Bundle the vcredist installer -->
         <Binary Id="vcredist_x64" SourceFile="vcredist_x64.exe" />
 
-        <!-- Custom action to install vcredist - changed to check return value -->
         <CustomAction Id="InstallVCRedist"
             BinaryKey="vcredist_x64"
             ExeCommand="/quiet /norestart"
             Execute="immediate"
             Return="check" />
 
-        <!-- Message-only custom action for failures -->
         <CustomAction Id="VCRedistFailure"
             Error="Failed to install Visual C++ Redistributable. Please install it manually from https://aka.ms/vs/17/release/vc_redist.x64.exe and then run this installer again." />
-
-        <!-- REMOVED THE LAUNCH CONDITION - this was the problem -->
 
         <Directory Id="TARGETDIR" Name="SourceDir">
             <Directory Id="ProgramFiles64Folder" Name="PFiles">
