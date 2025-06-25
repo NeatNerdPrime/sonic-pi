@@ -16,8 +16,30 @@
         <Property Id='ARPURLINFOABOUT'>https://sonic-pi.net</Property>
         <Property Id='ARPPRODUCTICON'>StartMenuIcon.exe</Property>
 
+        <!-- Visual C++ Redistributable Detection -->
+        <Property Id="VCREDIST2019_INSTALLED">
+            <DirectorySearch Id="VCRedistSystem64" Path="[System64Folder]">
+                <FileSearch Name="vcruntime140.dll" MinVersion="14.20.27508.1"/>
+            </DirectorySearch>
+        </Property>
+
+        <!-- Bundle the vcredist installer -->
+        <Binary Id="vcredist_x64" SourceFile="vcredist_x64.exe" />
+
+        <!-- Custom action to install vcredist - changed to check return value -->
+        <CustomAction Id="InstallVCRedist"
+            BinaryKey="vcredist_x64"
+            ExeCommand="/quiet /norestart"
+            Execute="immediate"
+            Return="check" />
+
+        <!-- Message-only custom action for failures -->
+        <CustomAction Id="VCRedistFailure"
+            Error="Failed to install Visual C++ Redistributable. Please install it manually from https://aka.ms/vs/17/release/vc_redist.x64.exe and then run this installer again." />
+
+        <!-- REMOVED THE LAUNCH CONDITION - this was the problem -->
+
         <Directory Id="TARGETDIR" Name="SourceDir">
-          <Merge Id="VCRedist" SourceFile="../merge_modules/Microsoft_VC142_CRT_x64.msm" DiskId="1" Language="0"/>
             <Directory Id="ProgramFiles64Folder" Name="PFiles">
                 <Directory Id="SonicPi" Name="Sonic Pi">
                     <Directory Id="AppDir" Name="app">
@@ -44,6 +66,7 @@
                 </Directory>
             </Directory>
         </Directory>
+
         <Feature Id="DefaultFeature" Title="Main Feature" Level="1">
             <ComponentGroupRef Id="ETC"/>
             <ComponentGroupRef Id="GUI"/>
@@ -52,6 +75,13 @@
             <ComponentRef Id="SONIC_PI.EXE" />
             <ComponentRef Id="StartMenuShortcuts" />
         </Feature>
+
+        <!-- Install sequence for vcredist - only run if not already installed -->
+        <InstallUISequence>
+            <Custom Action="InstallVCRedist" After="CostFinalize">
+                <![CDATA[NOT VCREDIST2019_INSTALLED]]>
+            </Custom>
+        </InstallUISequence>
 
         <UI Id="UserInterface">
             <UIRef Id="WixUI_Minimal" />
@@ -69,10 +99,6 @@
         <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOX" Value="1"/>
         <Property Id="WixShellExecTarget" Value="[#SONIC_PI.EXE]" />
         <CustomAction Id="LaunchApplication" BinaryKey="WixCA" DllEntry="WixShellExec" Impersonate="yes" />
-
-        <Feature Id="VCRedist" Title="Visual Studio C++ 2019 Runtime" AllowAdvertise="no" Display="hidden" Level="1">
-          <MergeRef Id="VCRedist"/>
-        </Feature>
 
         <Icon Id="StartMenuIcon.exe" SourceFile="../../app/gui/build/Release/sonic-pi.exe" />
     </Product>
