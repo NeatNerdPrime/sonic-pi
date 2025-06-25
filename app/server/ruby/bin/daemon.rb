@@ -898,7 +898,7 @@ module SonicPi
       def initialize(ports, token)
         args = [
           "--enable-frozen-string-literal", "-E", "utf-8", "--yjit",
-          File.expand_path(Paths.spider_server_path),
+          Paths.spider_server_path,
           "-u",
           ports["spider-listen-to-gui"],
           ports["spider-send-to-gui"],
@@ -910,7 +910,7 @@ module SonicPi
           token
         ]
 
-        super(File.expand_path(Paths.ruby_path), args, File.expand_path(Paths.spider_log_path))
+        super(Paths.ruby_path, args, Paths.spider_log_path)
       end
     end
 
@@ -924,7 +924,7 @@ module SonicPi
         @pid_requester = SonicPi::OSC::UDPClient.new('localhost', ports["tau"])
 
         @pid_updater_thread = Thread.new do
-          while !@tau_pid.delivered? && process_running?
+          while !@tau_pid.delivered?
             Util.log "Requesting tau send us its pid. Sending /send-pid-to-daemon"
             begin
               @pid_requester.send("/send-pid-to-daemon", token)
@@ -968,35 +968,23 @@ module SonicPi
         ENV["TAU_ENV"]                            = "#{ENV["SONIC_PI_ENV"] || unified_opts[:env] || "prod"}"
         ENV["MIX_ENV"]                            = ENV["TAU_ENV"]
         ENV["TAU_PHX_PORT"]                       = "#{@phx_port}"
-
-        if Util.os == :windows
-          ENV["TAU_LOG_PATH"]       = File.expand_path(Paths.tau_log_path).gsub('/', '\\')
-          ENV["TAU_BOOT_LOG_PATH"]  = File.expand_path(Paths.tau_boot_log_path).gsub('/', '\\')
-        else
-          ENV["TAU_LOG_PATH"]       = "#{Paths.tau_log_path}"
-          ENV["TAU_BOOT_LOG_PATH"]  = "#{Paths.tau_boot_log_path}"
-        end
+        ENV["TAU_LOG_PATH"]                       = "#{Paths.tau_log_path}"
+        ENV["TAU_BOOT_LOG_PATH"]                  = "#{Paths.tau_boot_log_path}"
 
         if Util.os == :windows
           if ENV["TAU_ENV"] == "prod"
-            ENV["RELEASE_SYS_CONFIG"] = File.expand_path(Paths.tau_release_sys_config_path).gsub('/', '\\')
-            ENV["RELEASE_ROOT"]       = File.expand_path(Paths.tau_release_root).gsub('/', '\\')
-            ENV["TAU_LOG_PATH"]       = File.expand_path(Paths.tau_log_path).gsub('/', '\\')
-            ENV["TAU_BOOT_LOG_PATH"]  = File.expand_path(Paths.tau_boot_log_path).gsub('/', '\\')
+            ENV["RELEASE_SYS_CONFIG"] = "#{Paths.tau_release_sys_config_path}"
+            ENV["RELEASE_ROOT"]       = "#{Paths.tau_release_root}"
 
-            cmd = File.expand_path(Paths.tau_release_erl_bin_path)
-
-            args = ["-config",                  File.expand_path(Paths.tau_release_sys_path),
-                    "-boot",                    File.expand_path(Paths.tau_release_start_path),
-                    "-boot_var", "RELEASE_LIB", File.expand_path(Paths.tau_release_lib_path),
-                    "-args_file",               File.expand_path(Paths.tau_release_vm_args_path),
+            cmd = "#{Paths.tau_release_erl_bin_path}".gsub('/', '\\')
+            args = ["-config",                  "#{Paths.tau_release_sys_path}".gsub('/', "\\"),
+                    "-boot",                    "#{Paths.tau_release_start_path}".gsub('/', "\\"),
+                    "-boot_var", "RELEASE_LIB", "#{Paths.tau_release_lib_path}".gsub('/', "\\"),
+                    "-args_file",               "#{Paths.tau_release_vm_args_path}".gsub('/', "\\"),
                     "-noshell",
                     "-s", "elixir", "start_cli",
                     "-mode",    "embedded",
               "-extra",   "--no-halt"]
-
-            Util.log "Windows Tau boot command: #{cmd}"
-            Util.log "Windows Tau boot args: #{args.inspect}"
           else
             cmd = Paths.tau_boot_path
             args = []
@@ -1006,21 +994,7 @@ module SonicPi
           args = [Paths.tau_boot_path]
         end
 
-        # Start without internal log recording
         super(cmd, args, Paths.tau_boot_log_path)
-
-        enable_internal_log_recording!
-
-
-        sleep 2
-        # Check if process exited immediately
-        unless process_running?
-          Util.log "Tau process exited immediately. Exit status: #{@wait_thr.value.exitstatus if @wait_thr}"
-          Util.log "Tau output: #{@log}" if @log && !@log.empty?
-          raise "Tau failed to start - process exited immediately"
-        end
-
-        disable_internal_log_recording!
       end
 
       def restart!
@@ -1208,7 +1182,7 @@ module SonicPi
           args << "-H" << sound_card_name
         end
 
-        cmd = File.expand_path(Paths.scsynth_path)
+        cmd = Paths.scsynth_path
 
         case Util.os
         when :linux, :raspberry
