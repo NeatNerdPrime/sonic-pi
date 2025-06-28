@@ -1135,42 +1135,42 @@
     <message>
         <location filename="../mainwindow.cpp" line="3388"/>
         <source>Move Left One Word</source>
-        <translation>Déplacer d&apos;un mot vers la droite</translation>
+        <translation>Déplacer d&apos;un mot vers la gauche</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3391"/>
         <source>Center Cursor Vertically</source>
-        <translation type="unfinished"></translation>
+        <translation>Centrer le curseur verticalement</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3394"/>
         <source>Undo</source>
-        <translation type="unfinished"></translation>
+        <translation>Défaire</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3397"/>
         <source>Redo</source>
-        <translation type="unfinished"></translation>
+        <translation>Refaire</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3400"/>
         <source>Select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Tout sélectionner</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3403"/>
         <source>Delete Word Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer le mot à gauche</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3406"/>
         <source>Delete Word Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer le mot à droite</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3409"/>
         <source>Upcase Word or Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Mise en majuscule d&apos;un mot ou d&apos;une sélection</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3412"/>
