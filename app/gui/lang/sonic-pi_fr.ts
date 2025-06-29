@@ -1315,17 +1315,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="3958"/>
         <source>Zoom In Logs</source>
-        <translation>Zoom sur les journaux</translation>
+        <translation>Zoom avant des journaux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3961"/>
         <source>Zoom Out Logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom arrière des journaux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="3996"/>
         <source>Focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Focus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="4024"/>
@@ -1340,7 +1340,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="4804"/>
         <source>Enabling MIDI &lt;input&gt;...</source>
-        <translation type="unfinished"></translation>
+        <translation>Activation du MIDI &lt;input&gt;...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="4859"/>
@@ -1965,7 +1965,7 @@ via le réseau actuellement connecté.</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="293"/>
         <source>Automatically align code on Enter or Run </source>
-        <translation type="unfinished"></translation>
+        <translation>Aligner automatiquement le code lors de Entrée ou Run </translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="298"/>
@@ -2416,13 +2416,14 @@ sur https://hosted.weblate.org/projects/sonic-pi/. Merci ! :)</translation>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="637"/>
         <source>System language found: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Langue système découverte&#xa0;: %1</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="921"/>
         <source>System language: %1
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Langue système&#xa0;: %1
+</translation>
     </message>
     <message>
         <location filename="../widgets/settingswidget.cpp" line="641"/>
