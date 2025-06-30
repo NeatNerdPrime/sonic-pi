@@ -415,7 +415,6 @@ void MainWindow::setupWindowStructure()
     errorPane = new QTextBrowser;
     metroPane = new SonicPiMetro(m_spClient, m_spAPI, theme, this);
 
-
     connect(metroPane, SIGNAL(linkEnabled()), this, SLOT(checkEnableLinkMenu()));
     connect(metroPane, SIGNAL(linkDisabled()), this, SLOT(uncheckEnableLinkMenu()));
 
@@ -3526,7 +3525,6 @@ void MainWindow::createToolBar()
     enableLinkAct->setChecked(false);
     connect(enableLinkAct, SIGNAL(triggered()), this, SLOT(toggleLinkMenu()));
 
-
     linkTapTempoAct = new QAction(tr("Tap Tempo"), this);
     connect(linkTapTempoAct, SIGNAL(triggered()), metroPane, SLOT(tapTempo()));
 
@@ -4311,7 +4309,14 @@ void MainWindow::readSettings()
     piSettings->themeStyle = theme->themeNameToStyle(styleName);
     piSettings->show_autocompletion = gui_settings->value("prefs/show-autocompletion", true).toBool();
     piSettings->show_context = gui_settings->value("prefs/show-context", true).toBool();
-    piSettings->shortcut_mode = gui_settings->value("prefs/shortcut-mode", 1).toInt();
+#if defined(Q_OS_WIN)
+    int os_shortcut_mode = 2;
+#elif defined(Q_OS_MAC)
+    int os_shortcut_mode = 3;
+#else
+    int os_shortcut_mode = 1;
+#endif
+    piSettings->shortcut_mode = gui_settings->value("prefs/shortcut-mode", os_shortcut_mode).toInt();
 
     emit settingsChanged();
 }
